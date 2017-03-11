@@ -1,2 +1,2 @@
 # Wallery
-Site internet d'une galerie d'art dédiée au street art
+Sites d'une galerie d'art axée sur le street art au design utilisable pour tout type de galerie d'art.
