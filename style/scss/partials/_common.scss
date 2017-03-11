@@ -1,0 +1,219 @@
+/* -- Déclaration des variables -- */
+
+$font-titre : 'Raleway';
+$font-paragraphe : 'Open Sans';
+$taille-titres-d : 24px;
+$taille-titres2-d: 20px;
+$taille-titres-m : 20px;
+$taille-paragraphe-d: 17px;
+$taille-paragraphe-m: 14px;
+$min-tab: 450px;
+$max-tab: 800px;
+$max-mob: 449px;
+
+
+/* -- Classes communes à toutes les pages -- */
+.bandeau {
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+	position: absolute;
+}
+
+.titre {
+	font-family: $font-titre;
+	font-size: $taille-titres2-d;
+
+	@media only screen and (max-width: $max-mob) {
+		font-size: $taille-paragraphe-m;
+	}
+}
+
+.col-50 {
+	width:48%;
+	float:left;
+
+	@media only screen and (max-width: $max-tab) {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+.col-33 {
+	width: 30.5%;
+	float:left;
+	margin: 1%;
+
+	@media only screen and (max-width: $max-tab) {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+.cartel {
+	border: 1px solid #000;
+	padding: 5px;
+}
+
+.paragraphe {
+	text-align: justify;
+}
+
+.inner {
+	max-width: 1120px;
+	width: 77%;
+	margin: 0 auto;
+
+	@media only screen and (min-width: $min-tab) and (max-width: $max-tab) {
+		width: 88%;
+	}
+
+	@media only screen and (max-width: $max-mob) {
+		width: 93%;
+	}
+}
+
+body {
+	font-size: 17px;
+}
+
+header {
+	background: #000;
+	font-family: $font-titre;
+	height: 94px;
+
+		a {
+			color:#fff;
+			text-decoration:none;
+		}
+
+		.logo {
+			float:left;
+			margin:2% 33.5% 0 0;
+		}
+
+		ul {
+
+			li {
+			text-transform:uppercase;
+			float:left;
+			margin: 4% 5% 0 0;
+			}
+
+		.search {
+			margin-right:0;
+			margin-top:2%;
+			}
+
+		}
+			
+	}
+
+h2 {
+	font-size: $taille-titres-d;
+	font-family: $font-titre;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 30px 0;
+
+	@media only screen and (max-width: $max-mob) {
+			font-size: $taille-titres-m;
+		}
+}
+
+footer {
+	background-color: #000;
+	color: #fff;
+	font-family: $font-paragraphe;
+	position: relative;
+
+		@media only screen and (max-width: $max-tab) {
+			.plan {
+				display: none;
+			}
+		}
+		
+		img#up {
+			position: absolute;
+			top: -60px;
+			right: 50px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #fff;
+		}
+
+		div {
+			padding-top: 50px;
+			text-align: center;
+			line-height: 28px;
+			width: 30.5%;
+			float:left;
+			margin: 1%;
+
+			@media only screen and (max-width: $max-tab) {
+				float: none;
+				width: 99%;
+			}
+
+				p {
+					margin-bottom: 30px;
+
+					&.horaires {
+						float: left;
+						margin-left: 15%;
+
+						@media only screen and (max-width: $max-tab) {
+							float: none;
+							margin: 0;
+						}
+					}
+				}
+			&.social {
+				ul {
+					text-align: center;
+
+					li {
+					display: inline-block;
+					margin: 0 23px;
+
+					@media only screen and (max-width: $max-tab) {
+						margin: 0 45px;
+
+						@media only screen and (max-width: $max-mob) {
+							margin: 0 15px;
+						}
+
+						&:first-child{
+							margin-left: 0;
+						}
+						&:last-child{
+							margin-right: 0;
+						}
+					}
+
+					}
+				}
+				
+				img {
+					width: 40px;
+
+					@media only screen and (min-width: $min-tab) and (max-width: $max-tab) {
+						width: 60px;
+					}
+				}
+			}
+		}
+
+		li {
+			line-height: 45px;
+
+			&:first-child {
+				text-transform: uppercase;
+				line-height: auto;
+				font-size: 20px;
+			}
+		}
+}
