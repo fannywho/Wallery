@@ -8,17 +8,21 @@
 	<title>Wallery - Expositions</title>
 </head>
 <body>
-	<header>
+	<header class="clearfix" id="up">
 		<div class="inner">
-			<h1><a href="index.html"><img src="img-layout/logoblanc.svg" alt="Wallery" class="logo"></a></h1>
-			<nav>
-				<ul>
-					<li><a href="artistes.html">Artistes</a></li>
-					<li><a href="exposition.html">Expositions</a></li>
-					<li><a href="apropos.html">À propos</a></li>
+			<h1><a href="index.html"><img src="img-layout/logoblanc.svg" alt="wallery" class="logo"></a></h1>
+			<nav class="clearfix">
+				<ul class="clearfix">
 					<li class="search"><a href="#"><img src="img-layout/loupe.svg" alt="icône de recherche"></a></li>
+					<li class="burger"><a href="#"><img src="img-layout/burger.svg" alt="icône de menu responsive"></a></li>
+					<li id="apropos"><a href="apropos.html">À propos</a>
+					<div id="hover-apropos"></div></li>
+					<li id="expo"><a href="exposition.html">Expositions</a>
+					<div id="hover-expo"></div></li>
+						<li id="artiste"><a href="artistes.html">Artistes</a>
+						<div id="hover-artiste"></div></li>
 				</ul>
-			</nav>	
+			</nav>			
 		</div>
 	</header>
 	<section class="expo-actuelle inner">

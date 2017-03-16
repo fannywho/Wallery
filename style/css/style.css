@@ -59,6 +59,117 @@ table {
 .clearfix:after {
   clear: both; }
 
+/*! http://responsiveslides.com v1.55 by @viljamis */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left; }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0; }
+
+#wrapper {
+  float: left;
+  width: 100%;
+  margin-bottom: 50px; }
+
+.rslides {
+  margin: 0 auto; }
+
+section.caroussel {
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%; }
+
+.centered-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: transparent;
+  top: 50%;
+  left: 0;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("../../img-layout/themes.gif") no-repeat left top;
+  margin-top: -45px; }
+
+.centered-btns_nav:active {
+  opacity: 1.0; }
+
+.centered-btns_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0; }
+
+.centered-btns_nav:focus,
+.transparent-btns_nav:focus,
+.large-btns_nav:focus {
+  outline: none; }
+
+.centered-btns_tabs,
+.transparent-btns_tabs,
+.large-btns_tabs {
+  margin-top: 10px;
+  text-align: center; }
+
+.centered-btns_tabs li,
+.transparent-btns_tabs li,
+.large-btns_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  margin-right: 5px; }
+
+.centered-btns_tabs a,
+.transparent-btns_tabs a,
+.large-btns_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #ccc;
+  background: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  _display: block;
+  *display: block;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  width: 9px;
+  height: 9px; }
+
+.centered-btns_here a,
+.transparent-btns_here a,
+.large-btns_here a {
+  background: #222;
+  background: rgba(0, 0, 0, 0.8); }
+
 /* -- D├®claration des variables -- */
 /* -- Classes communes ├á toutes les pages -- */
 .bandeau {
@@ -83,9 +194,9 @@ table {
       float: none; } }
 
 .col-33 {
-  width: 30.5%;
+  width: 32%;
   float: left;
-  margin: 1%; }
+  margin: 0.6%; }
   @media only screen and (max-width: 800px) {
     .col-33 {
       width: 100%;
@@ -98,6 +209,11 @@ table {
 
 .paragraphe {
   text-align: justify; }
+
+.uppertitle {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Raleway"; }
 
 .inner {
   max-width: 1120px;
@@ -116,20 +232,66 @@ body {
 header {
   background: #000;
   font-family: "Raleway";
-  height: 94px; }
+  height: 94px;
+  position: relative; }
   header a {
     color: #fff;
     text-decoration: none; }
   header .logo {
     float: left;
-    margin: 2% 33.5% 0 0; }
+    margin: 2.5% 0 0 0; }
   header ul li {
     text-transform: uppercase;
-    float: left;
-    margin: 4% 5% 0 0; }
-  header ul .search {
-    margin-right: 0;
+    float: right;
+    margin: 4% 4% 0 0;
+    position: relative; }
+    header ul li#artiste:hover div#hover-artiste {
+      width: 79px; }
+    header ul li#expo:hover div#hover-expo {
+      width: 111px; }
+    header ul li#apropos:hover div#hover-apropos {
+      width: 85px; }
+    header ul li div {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      height: 7px;
+      border-radius: 100px; }
+      header ul li div#hover-artiste {
+        background: blue;
+        width: 0;
+        transition: 0.3s; }
+      header ul li div#hover-expo {
+        background: red;
+        width: 0;
+        transition: 0.3s; }
+      header ul li div#hover-apropos {
+        background: yellow;
+        width: 0;
+        transition: 0.3s; }
+  header .search {
     margin-top: 2%; }
+  header .burger {
+    display: none; }
+  @media only screen and (max-width: 800px) {
+    header .logo {
+      margin-top: 5%;
+      margin-right: 0; }
+    header .burger {
+      display: block;
+      float: left;
+      margin: 5% 0 0 20%; }
+    header .search {
+      display: block;
+      float: left;
+      margin: 4% 0 0 20%; }
+    header ul li {
+      display: none; } }
+  @media only screen and (max-width: 449px) {
+    header .burger {
+      margin: 6.5% 0 0 10%; }
+    header .search {
+      margin: 5% 0 0 12%; } }
 
 h2 {
   font-size: 24px;
@@ -153,6 +315,9 @@ footer {
     position: absolute;
     top: -60px;
     right: 50px; }
+    footer img#up:hover {
+      background: rgba(0, 0, 0, 0.1);
+      transition: 0.5s; }
   footer a {
     text-decoration: none;
     color: #fff; }
@@ -204,12 +369,108 @@ footer {
       line-height: auto;
       font-size: 20px; }
 
-/* ------- ACCUEIL ------ */
-section.projecteur {
-  margin-bottom: 100px; }
+/******************************************
+*** Carousel 
+*******************************************/
+@media only screen and (max-width: 449px) {
+  section.caroussel.hidden {
+    display: none; } }
+section.caroussel p {
+  font-size: 17px;
+  font-family: "Open Sans";
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  line-height: 30px; }
+  @media only screen and (max-width: 449px) {
+    section.caroussel p {
+      font-size: 14px; } }
+section.caroussel a.bouton {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Raleway";
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  z-index: 999; }
+  section.caroussel a.bouton:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s; }
   @media only screen and (max-width: 800px) {
-    section.projecteur div {
+    section.caroussel a.bouton {
+      bottom: 20px; } }
+section.caroussel img.arrowdown {
+  width: 73px;
+  position: absolute;
+  bottom: -60px;
+  z-index: 999;
+  left: 50%;
+  margin-left: -50px; }
+  section.caroussel img.arrowdown:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transition: 0.5s; }
+  @media only screen and (max-width: 449px) {
+    section.caroussel img.arrowdown {
+      left: 36%; } }
+
+section.header-mobile {
+  text-align: center; }
+  @media only screen and (min-width: 450px) {
+    section.header-mobile {
+      display: none; } }
+  section.header-mobile img {
+    width: 100%; }
+  section.header-mobile p {
+    background: #333;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left; }
+    section.header-mobile p a {
+      color: #fff;
+      font-size: 14px;
+      font-family: "Open Sans";
+      line-height: 20px;
+      text-decoration: none; }
+      section.header-mobile p a span {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: "Raleway"; }
+  @media only screen and (max-width: 449px) {
+    section.header-mobile a.bouton {
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #333;
+      font-size: 14px;
+      font-family: "Raleway";
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: 1px solid #333; } }
+
+/*****************************************
+***** Projecteur
+*****************************************/
+section.projecteur {
+  position: relative;
+  top: 100px; }
+  @media only screen and (max-width: 449px) {
+    section.projecteur {
+      position: static;
+      margin-top: 25px;
       margin-bottom: 50px; } }
+  section.projecteur div {
+    margin-bottom: 150px; }
+    @media only screen and (max-width: 449px) {
+      section.projecteur div {
+        margin-bottom: 50px; } }
   section.projecteur img {
     width: 100%;
     height: auto; }
@@ -223,7 +484,9 @@ section.projecteur {
       text-decoration: none;
       color: #000; }
 
-/* -------- EXPOSITIONS ------- */
+/*********************************
+****** Expositions
+*********************************/
 section.expo-actuelle {
   text-align: justify; }
   section.expo-actuelle img {
