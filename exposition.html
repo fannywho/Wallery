@@ -11,20 +11,71 @@
 	<header class="clearfix" id="up">
 		<div class="inner">
 			<h1><a href="index.html"><img src="img-layout/logoblanc.svg" alt="wallery" class="logo"></a></h1>
-			<nav class="clearfix">
-				<ul class="clearfix">
+			<nav>
+				<ul>
 					<li class="search"><a href="#"><img src="img-layout/loupe.svg" alt="icône de recherche"></a></li>
 					<li class="burger"><a href="#"><img src="img-layout/burger.svg" alt="icône de menu responsive"></a></li>
-					<li id="apropos"><a href="apropos.html">À propos</a>
-					<div id="hover-apropos"></div></li>
-					<li id="expo"><a href="exposition.html">Expositions</a>
-					<div id="hover-expo"></div></li>
-						<li id="artiste"><a href="artistes.html">Artistes</a>
-						<div id="hover-artiste"></div></li>
+					<li><a href="apropos.html">À propos</a></li>
+					<li><a href="exposition.html">Expositions</a></li>
+						<li class="artistes-nav"><a href="artistes.html">Artistes</a></li>
 				</ul>
 			</nav>			
 		</div>
 	</header>
+
+	<div class="menu cache">
+		<a href="#" class="annuler"><img src="img-layout/cancel.png" alt="icône annulation"></a>
+		<ul>
+			<li><a href="artistes.html">Artistes</a></li>
+			<li><a href="exposition.html">Expositions</a></li>
+			<li><a href="apropos.html">À propos</a></li>
+		</ul>
+	</div>
+
+	<div class="recherche cache">
+		<label>Entrez votre recherche</label>
+		<br><input type='textarea'>
+		<br><a href="#" class="cartel">Envoyer</a>
+		<a href="#" class="cartel boutonAnnule">Annuler</a>
+	</div>
+
+	<div class="hover-artistes cache">
+		<ul>
+			<li><a href="artistes.html">Peintures</a></li>
+			<li><a href="artistes.html">Collages</a></li>
+			<li><a href="artistes.html">Graffitis</a></li>
+			<li><a href="artistes.html">Marqueurs</a></li>
+		</ul>
+
+		<div class="hover-images">
+			<div class="peintures-images">
+				<a href="detail.html"><img src="img-content/image-2.png"></a>
+				<p class='left'>Rimka</p>
+				<a href="artistes.html"><img src="img-content/image-3.png"></a>
+				<p class="right">Liju Nesman</p>
+				
+			</div>
+			<div class="collages-images cache">
+				<a href="detail.html"><img src="img-content/image-8.png"></a>
+				<p class="left">Tranoï</p>
+				<a href="artistes.html"><img src="img-content/image-9.png"></a>
+				<p class="right">Dargo Marie-Jean</p>
+			</div>
+			<div class="graffiti-images cache">
+				<a href="detail.html"><img src="img-content/image-1.png"></a>
+				<p class="left">Jacques Rousseau</p>
+				<a href="detail.html"><img src="img-content/image-5.png"></a>
+				<p class="right">Deklein</p>		
+			</div>
+			<div class="marqueur-images cache">
+				<a href="detail.html"><img src="img-content/image-4.png"></a>
+				<p class="left">Nyfa Tierpour</p>	
+				<a href="detail.html"><img src="img-content/image-7.png"></a>
+				<p class="right">Ferlitard</p>	
+			</div>
+		</div>
+	</div>
+	
 	<section class="expo-actuelle inner">
 		<h2>Exposition du moment</h2>
 		<img src="img-content/expoactuelle.png" alt="exposition" class="inner">
@@ -71,7 +122,7 @@
 		</div>		
 	</section>
 <footer class="clearfix">
-		<a href="#"><img src="img-layout/arrowup.png" id="up"></a>
+		<a data-scroll="#up" href="#up"><img src="img-layout/arrowup.png" id="up"></a>
 		<div class="plan">
 			<ul>
 				<li><a href="#">Plan de site</a></li>
@@ -102,4 +153,6 @@
 		</div>
 	</footer>
 </body>
+<script src="js/smooth-scroll.js"></script>
+<script src="js/script.js"></script>
 </html>
