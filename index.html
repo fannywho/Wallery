@@ -1,175 +1,192 @@
 <!DOCTYPE html>
 <html>
-<head>	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:400,400i,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style/css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  	<script src="js/responsiveslides.js"></script>
-	<title>Wallery</title>
-	<script>
-    $(function () {
 
-      $("#slider").responsiveSlides({
-        auto: true,
-        pager: false,
-        nav: true,
-        speed: 500,
-        maxwidth: "",
-        namespace: "centered-btns"
-      });
-
-    });
-  </script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/css/style.css">
+    <title>Wallery</title>
 </head>
+
 <body>
-		<header class="clearfix" id="up">
-		<div class="inner clearfix">
-			<h1><a href="index.html"><img src="img-layout/logoblanc.svg" alt="wallery" class="logo"></a></h1>
-			<nav class="clearfix">
-				<ul>
-					<li class="search"><a href="#"><img src="img-layout/loupe.svg" alt="icône de recherche"></a></li>
-					<li class="burger"><a href="#"><img src="img-layout/burger.svg" alt="icône de menu responsive"></a></li>
-					<li id="apropos"><a href="apropos.html">À propos</a>
-					<div id="hover-apropos"></div></li>
-					<li id="expo"><a href="exposition.html">Expositions</a>
-					<div id="hover-expo"></div></li>
-					<li class="artistes-nav" id="artiste"><a href="artistes.html">Artistes</a>
-					<div id="hover-artiste"></div></li>
-				</ul>
-			</nav>			
-		</div>
-	</header>
-	<div class="recherche cache">
-		<label>Entrez votre recherche</label>
-		<br><input type='textarea'>
-		<br><a href="#" class='cartel'>Envoyer</a>
-		<a href="#" class="cartel boutonAnnule">Annuler</a>
-	</div>
+    <header class="clearfix" id="top">
+        <div class="inner clearfix">
+            <h1><a href="index.html"><img src="img-layout/logoblanc.svg" alt="wallery" class="logo"></a></h1>
+            <nav class="clearfix">
+                <ul>
+                    <li class="search">
+                        <a href="#"><img src="img-layout/loupe.svg" alt="icône de recherche"></a>
+                    </li>
+                    <li class="burger">
+                        <a href="#"><img src="img-layout/burger.svg" alt="icône de menu responsive"></a>
+                    </li>
+                    <li id="apropos"><a href="apropos.html">À propos</a>
+                        <div id="hover-apropos"></div>
+                    </li>
+                    <li id="expo"><a href="exposition.html">Expositions</a>
+                        <div id="hover-expo"></div>
+                    </li>
+                    <li class="artistes-nav" id="artiste"><a href="artistes.html">Artistes</a>
+                        <div id="hover-artiste"></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="recherche cache clearfix">
+        <label>Entrez votre recherche</label>
+        <input type='text'>
+        <a href="#" class="cartel">Envoyer</a>
+        <a href="#" class="cartel boutonAnnule">Annuler</a>
+    </div>
 
-	<div class="menu cache">
-		<a href="#" class="annuler"><img src="img-layout/cancel.png" alt="icône annulation"></a>
-			<ul>
-				<li><a href="artistes.html">Artistes</a></li>
-				<li><a href="exposition.html">Expositions</a></li>
-				<li><a href="apropos.html">À propos</a></li>
-			</ul>
-	</div>
+    <div class="menu cache">
+        <a href="#" class="annuler"><img src="img-layout/cancel.png" alt="icône annulation"></a>
+        <ul>
+            <li><a href="artistes.html">Artistes</a></li>
+            <li><a href="exposition.html">Expositions</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+        </ul>
+    </div>
 
-	<div class="hover-artistes cache">
-		<ul>
-			<li><a href="artistes.html">Peintures</a></li>
-			<li><a href="artistes.html">Collages</a></li>
-			<li><a href="artistes.html">Graffitis</a></li>
-			<li><a href="artistes.html">Marqueurs</a></li>
-		</ul>
+      <div class="hover-artistes cache">
+        <ul>
+            <li><a href="artistes.html">Peintures</a></li>
+            <li><a href="artistes.html">Collages</a></li>
+            <li><a href="artistes.html">Graffitis</a></li>
+            <li><a href="artistes.html">Marqueurs</a></li>
+        </ul>
 
-		<div class="hover-images">
-			<div class="peintures-images">
-				<a href="detail.html"><img src="img-content/image-2.png"></a>
-				<p class='left'>Rimka</p>
-				<a href="artistes.html"><img src="img-content/image-3.png"></a>
-				<p class="right">Liju Nesman</p>
-				
-			</div>
-			<div class="collages-images cache">
-				<a href="detail.html"><img src="img-content/image-8.png"></a>
-				<p class="left">Tranoï</p>
-				<a href="artistes.html"><img src="img-content/image-9.png"></a>
-				<p class="right">Dargo Marie-Jean</p>
-			</div>
-			<div class="graffiti-images cache">
-				<a href="detail.html"><img src="img-content/image-1.png"></a>
-				<p class="left">Jacques Rousseau</p>
-				<a href="detail.html"><img src="img-content/image-5.png"></a>
-				<p class="right">Deklein</p>		
-			</div>
-			<div class="marqueur-images cache">
-				<a href="detail.html"><img src="img-content/image-4.png"></a>
-				<p class="left">Nyfa Tierpour</p>	
-				<a href="detail.html"><img src="img-content/image-7.png"></a>
-				<p class="right">Ferlitard</p>	
-			</div>
-		</div>
-	</div>
-		<section class="caroussel clearfix hidden">
-			<ul class="rslides" id="slider">
-	        	<li>
-	          		<img src="img-content/carousel01.jpg" alt="">
-	          		<p class="bandeau"><span class="uppertitle">[Exposition] "Le tag dans tous ses états"</span>
-	          		<br>Du 9 avril au 17 mai 2017</p>
-	        	</li>
-	        	<li>
-		          <img src="img-content/carousel02.jpg" alt="">
-		          <p class="bandeau"><span class="uppertitle">[Exposition] "Faire du quotidien un art"</span>
-		          <br>Du 20 mai au 10 juin 2017</p>
-		        </li>
-		        <li>
-		          <img src="img-content/carousel03.jpg" alt="">
-		          <p class="bandeau"><span class="uppertitle">[Cocktail/Rencontre] Michel Feutre</span>
-		          <br>Le 13 juillet à 19h</p>
-		        </li>
-	        </ul>
-	        <a class="bouton" href="exposition.html">Découvrir</a>
-	        <a href="#projecteur"><img src="img-layout/arrowdown.png" class="arrowdown"></a>
-		</section>
-<!-- Fin section carousel -->
-		<section class="header-mobile">
-			<img src="img-content/carousel01.jpg" alt="">
-	         <p><a href="exposition.html"><span class="uppertitle">[Exposition] "Le tag dans tous ses états"</span>
+        <div class="hover-images">
+            <div class="peintures-images">
+                <a href="detail.html"><img src="img-content/image-2.png" alt="image de l'artiste"></a>
+                <p class='left'>Rimka</p>
+                <a href="artistes.html"><img src="img-content/image-3.png" alt="image de l'artiste"></a>
+                <p class="right">Liju Nesman</p>
+
+            </div>
+            <div class="collages-images cache">
+                <a href="detail.html"><img src="img-content/image-8.png" alt="image de l'artiste"></a>
+                <p class="left">Tranoï</p>
+                <a href="artistes.html"><img src="img-content/image-9.png" alt="image de l'artiste"></a>
+                <p class="right">Dargo Marie-Jean</p>
+            </div>
+            <div class="graffiti-images cache">
+                <a href="detail.html"><img src="img-content/image-1.png" alt="image de l'artiste"></a>
+                <p class="left">Jacques Rousseau</p>
+                <a href="detail.html"><img src="img-content/image-5.png" alt="image de l'artiste"></a>
+                <p class="right">Deklein</p>
+            </div>
+            <div class="marqueur-images cache">
+                <a href="detail.html"><img src="img-content/image-4.png" alt="image de l'artiste"></a>
+                <p class="left">Nyfa Tierpour</p>
+                <a href="detail.html"><img src="img-content/image-7.png" alt="image de l'artiste"></a>
+                <p class="right">Ferlitard</p>
+            </div>
+        </div>
+    </div>
+    <section class="caroussel clearfix hidden">
+        <ul class="rslides" id="slider">
+            <li>
+                <img src="img-content/carousel01.jpg" alt="">
+                <p class="bandeau"><span class="uppertitle">[Exposition] "Le tag dans tous ses états"</span>
+                    <br>Du 9 avril au 17 mai 2017</p>
+            </li>
+            <li>
+                <img src="img-content/carousel02.jpg" alt="">
+                <p class="bandeau"><span class="uppertitle">[Exposition] "Faire du quotidien un art"</span>
+                    <br>Du 20 mai au 10 juin 2017</p>
+            </li>
+            <li>
+                <img src="img-content/carousel03.jpg" alt="">
+                <p class="bandeau"><span class="uppertitle">[Cocktail/Rencontre] Michel Feutre</span>
+                    <br>Le 13 juillet à 19h</p>
+            </li>
+        </ul>
+        <a class="bouton" href="exposition.html">Découvrir</a>
+        <a href="#projecteur" data-scroll data-options='{ "easing": "easeInQuad" }'><img src="img-layout/arrowdown.png" class="arrowdown" alt="icône flèche"></a>
+    </section>
+    <!-- Fin section carousel -->
+    <section class="header-mobile">
+        <img src="img-content/carousel01.jpg" alt="">
+        <p><a href="exposition.html"><span class="uppertitle">[Exposition] "Le tag dans tous ses états"</span>
 	          		<br>Du 9 avril au 17 mai 2017</a></p>
-	        </ul>
-	        <a class="bouton" href="exposition.html"><span>Découvrir</a>
-		</section>
+        <a class="bouton" href="exposition.html"><span>Découvrir</span></a>
+    </section>
 
-		<section class="projecteur inner clearfix">
-			<h2  id="projecteur">Projecteur sur</h2>
-			<div class="col-33">
-				<a href="detail.html"><img src="img-content/image-1.png" alt="Nyfa Tierpour"></a>
-				<h3 class="cartel"><a href="detail.html">Nyfa Tierpour</a></h3>
-			</div>
-			<div class="col-33">
-				<a href="detail.html"><img src="img-content/image-2.png" alt="Liju Nesman"></a>
-				<h3 class="cartel"><a href="detail.html">Liju Nesman</a></h3>
-			</div>
-			<div class="col-33">
-				<a href="detail.html"><img src="img-content/image-3.png" alt="Mysa Yaya"></a>
-				<h3 class="cartel"><a href="detail.html">Mysa Yaya</a></h3>
-			</div>
-		</section>
-<footer class="clearfix">
-		<a href="#"><img src="img-layout/arrowup.png" id="up"></a>
-		<div class="plan">
-			<ul>
-				<li><a href="#">Plan de site</a></li>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="artistes.html">Artistes</a></li>
-				<li><a href="exposition.html">Expositions</a></li>
-				<li><a href="apropos.html">A propos</a></li>
-				<li><a href="mailto:contact@wallery.fr">Contact</a></li>
-			</ul>
-		</div>
-		<div class="clearfix">
-			<img src="img-layout/logoblanc.svg" alt="logo">
-			<p>52, rue de la Roquette
-			<br/>75 011 Paris</p>
-			<p>06 23 45 67 89 - 01 23 45 67 89</p>
-			<p class="horaires">Mardi au Samedi :
-			<br/>10h - 13h et 15h - 20h</p>
-			<p class="horaires">Dimanche :
-			<br/>10h - 13h</p>
-		</div>
-		<div class="social">
-			<ul>
-				<li><a href="#"><img src="img-layout/social/facebook.svg" alt="facebook"></a></li>
-				<li><a href="#"><img src="img-layout/social/instagram.svg" alt="instagram"></a></li>
-				<li><a href="#"><img src="img-layout/social/pinterest.svg" alt="pinterest"></a></li>
-				<li><a href="#"><img src="img-layout/social/gplus.svg" alt="gplus"></a></li>
-			</ul>
-		</div>
-	</footer>
+    <section class="projecteur inner clearfix">
+        <h2>Projecteur sur</h2>
+        <div class="col-33" id="projecteur">
+            <a href="detail.html"><img src="img-content/image-1.png" alt="Nyfa Tierpour"></a>
+            <h3 class="cartel"><a href="detail.html">Nyfa Tierpour</a></h3>
+        </div>
+        <div class="col-33">
+            <a href="detail.html"><img src="img-content/image-2.png" alt="Liju Nesman"></a>
+            <h3 class="cartel"><a href="detail.html">Liju Nesman</a></h3>
+        </div>
+        <div class="col-33">
+            <a href="detail.html"><img src="img-content/image-3.png" alt="Mysa Yaya"></a>
+            <h3 class="cartel"><a href="detail.html">Mysa Yaya</a></h3>
+        </div>
+    </section>
+    <footer class="clearfix">
+        <a href="#" data-scroll="#top"><img src="img-layout/arrowup.png" id="up" alt="icône flèche"></a>
+        <div class="plan">
+            <ul>
+                <li><a href="#">Plan de site</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="artistes.html">Artistes</a></li>
+                <li><a href="exposition.html">Expositions</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="mailto:contact@wallery.fr">Contact</a></li>
+            </ul>
+        </div>
+        <div class="clearfix">
+            <img src="img-layout/logoblanc.svg" alt="logo">
+            <p>52, rue de la Roquette
+                <br/>75 011 Paris</p>
+            <p>06 23 45 67 89 - 01 23 45 67 89</p>
+            <p class="horaires">Mardi au Samedi :
+                <br/>10h - 13h et 15h - 20h</p>
+            <p class="horaires">Dimanche :
+                <br/>10h - 13h</p>
+        </div>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="#"><img src="img-layout/social/facebook.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/social/instagram.svg" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/social/pinterest.svg" alt="pinterest"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/social/gplus.svg" alt="gplus"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 <script src="js/smooth-scroll.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/responsiveslides.js"></script>
+    <script>
+        $(function () {
+
+            $("#slider").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: true,
+                speed: 500,
+                maxwidth: "",
+                namespace: "centered-btns"
+            });
+
+        });
+    </script>
+
 </html>

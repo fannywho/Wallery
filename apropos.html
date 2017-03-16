@@ -1,159 +1,179 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:400,400i,700" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Wallery</title>
-	<link rel="stylesheet" href="style/css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:400,400i,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallery</title>
+    <link rel="stylesheet" href="style/css/style.css">
 </head>
+
 <body>
-		<header class="clearfix" id="up">
-		<div class="inner clearfix">
-			<h1><a href="index.html"><img src="img-layout/logoblanc.svg" alt="wallery" class="logo"></a></h1>
-			<nav class="clearfix">
-				<ul>
-					<li class="search"><a href="#"><img src="img-layout/loupe.svg" alt="icône de recherche"></a></li>
-					<li class="burger"><a href="#"><img src="img-layout/burger.svg" alt="icône de menu responsive"></a></li>
-					<li><a href="apropos.html">À propos</a>
-					<div id="hover-apropos"></div></li>
-					<li><a href="exposition.html">Expositions</a>
-					<div id="hover-expo"></div></li>
-					<li class="artistes-nav"><a href="artistes.html">Artistes</a>
-					<div id="hover-artiste"></div></li>
-				</ul>
-			</nav>			
-		</div>
-	</header>
-	
-	<div class="recherche cache">
-		<label>Entrez votre recherche</label>
-		<br><input type='textarea'>
-		<br><a href="#" class='cartel'>Envoyer</a>
-		<a href="#" class="cartel boutonAnnule">Annuler</a>
-	</div>
+    <header class="clearfix" id="top">
+        <div class="inner clearfix">
+            <h1><a href="index.html"><img src="img-layout/logoblanc.svg" alt="wallery" class="logo"></a></h1>
+            <nav class="clearfix">
+                <ul>
+                    <li class="search">
+                        <a href="#"><img src="img-layout/loupe.svg" alt="icône de recherche"></a>
+                    </li>
+                    <li class="burger">
+                        <a href="#"><img src="img-layout/burger.svg" alt="icône de menu responsive"></a>
+                    </li>
+                    <li><a href="apropos.html">À propos</a>
+                        <div id="hover-apropos"></div>
+                    </li>
+                    <li><a href="exposition.html">Expositions</a>
+                        <div id="hover-expo"></div>
+                    </li>
+                    <li class="artistes-nav"><a href="artistes.html">Artistes</a>
+                        <div id="hover-artiste"></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-	<div class="menu cache">
-		<a href="#" class="annuler"><img src="img-layout/cancel.png" alt="icône annulation"></a>
-			<ul>
-				<li><a href="artistes.html">Artistes</a></li>
-				<li><a href="exposition.html">Expositions</a></li>
-				<li><a href="apropos.html">À propos</a></li>
-			</ul>
-	</div>
+    <div class="recherche cache">
+        <label>Entrez votre recherche</label>
+        <input type='text'>
+        <a href="#" class='cartel'>Envoyer</a>
+        <a href="#" class="cartel boutonAnnule">Annuler</a>
+    </div>
 
-	<div class="hover-artistes cache">
-		<ul>
-			<li><a href="artistes.html">Peintures</a></li>
-			<li><a href="artistes.html">Collages</a></li>
-			<li><a href="artistes.html">Graffitis</a></li>
-			<li><a href="artistes.html">Marqueurs</a></li>
-		</ul>
+    <div class="menu cache">
+        <a href="#" class="annuler"><img src="img-layout/cancel.png" alt="icône annulation"></a>
+        <ul>
+            <li><a href="artistes.html">Artistes</a></li>
+            <li><a href="exposition.html">Expositions</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+        </ul>
+    </div>
 
-		<div class="hover-images">
-			<div class="peintures-images">
-				<a href="detail.html"><img src="img-content/image-2.png"></a>
-				<p class='left'>Rimka</p>
-				<a href="artistes.html"><img src="img-content/image-3.png"></a>
-				<p class="right">Liju Nesman</p>
-				
-			</div>
-			<div class="collages-images cache">
-				<a href="detail.html"><img src="img-content/image-8.png"></a>
-				<p class="left">Tranoï</p>
-				<a href="artistes.html"><img src="img-content/image-9.png"></a>
-				<p class="right">Dargo Marie-Jean</p>
-			</div>
-			<div class="graffiti-images cache">
-				<a href="detail.html"><img src="img-content/image-1.png"></a>
-				<p class="left">Jacques Rousseau</p>
-				<a href="detail.html"><img src="img-content/image-5.png"></a>
-				<p class="right">Deklein</p>		
-			</div>
-			<div class="marqueur-images cache">
-				<a href="detail.html"><img src="img-content/image-4.png"></a>
-				<p class="left">Nyfa Tierpour</p>	
-				<a href="detail.html"><img src="img-content/image-7.png"></a>
-				<p class="right">Ferlitard</p>	
-			</div>
-		</div>
-	</div>
-	
-	<h2>À propos de Wallery</h2>
-	<section class="horaires clearfix inner">
-		<img src="img-content/galerie-horaires.jpg" alt="galerie Wallery">
-		<div class="bandeau clearfix">
-			<h4>Horaires <br>d'ouverture</h4>
-			<p>Mardi à samedi :
-			<br>10h - 13h et 15h - 20h</p>
-			<p>Dimanche :
-			<br>10h - 13h</p>
-			<h4 class="trouver">Nous trouver</h4>
-			<div class="fleche">
-				<a href="#tocarte" data-scroll href="#tocarte"><img src="img-layout/arrow-down.svg"></a>
-			</div>
-		</div>
-	</section>
-	<section class="carte clearfix inner">
-		<div class="col-50 clearfix frame" id="tocarte">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.1752183585704!2d2.3711529149851827!3d48.85486907928716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6720744fe77eb%3A0x1c1b3c0fba003759!2s52+Rue+de+la+Roquette%2C+75011+Paris!5e0!3m2!1sfr!2sfr!4v1489070918146" allowfullscreen></iframe>
-		</div>
-		<div class="col-50 infos">		
-			<p><img src="img-layout/adressbook.svg">52, rue de la Roquette
-			<br>75011 Paris</p>
-			<p><img src="img-layout/phone.svg">06 12 34 56 78
-			<br>01 23 45 67 89</p>
-			<a href="#" class="cartel">Nous contacter</a>
-		</div>
-	</section>
-	<section class="historique clearfix inner">
-		<p class="paragraphe clearfix">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam nulla et turpis pretium, et gravida lectus fringilla. Morbi eu congue quam, in ultrices nisl. Ut molestie quam nisl. Sed a neque enim. Phasellus tincidunt sollicitudin massa nec fermentum. Etiam ut nunc a urna venenatis tincidunt id at erat. Donec gravida malesuada eros, vitae mattis libero sagittis eu. Vestibulum varius felis et ante cursus, ac hendrerit diam ullamcorper. Duis cursus, urna convallis aliquet consequat, nunc quam tempus lacus, ac vehicula augue sapien sed turpis. Nulla ullamcorper faucibus turpis ac ullamcorper. Nulla facilisi. Nam ac facilisis nulla.</p>
-	</section>
-	<section class="images-galerie clearfix inner">
-		<div class="col-33">
-			<img src="img-content/galerie-1.jpg" alt="image de la galerie">
-		</div>
-		<div class="col-33">
-			<img src="img-content/galerie-2.jpg" alt="image de la galerie">
-		</div>
-		<div class="col-33">
-			<img src="img-content/galerie-3.jpg" alt="image de la galerie">
-		</div>
-	</section>
+  <div class="hover-artistes cache">
+        <ul>
+            <li><a href="artistes.html">Peintures</a></li>
+            <li><a href="artistes.html">Collages</a></li>
+            <li><a href="artistes.html">Graffitis</a></li>
+            <li><a href="artistes.html">Marqueurs</a></li>
+        </ul>
 
-<footer class="clearfix">
-		<a data-scroll="#up" href="#up"><img src="img-layout/arrowup.png" id="up"></a>
-		<div class="plan">
-			<ul>
-				<li><a href="#">Plan de site</a></li>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="artistes.html">Artistes</a></li>
-				<li><a href="exposition.html">Expositions</a></li>
-				<li><a href="apropos.html">A propos</a></li>
-				<li><a href="mailto:contact@wallery.fr">Contact</a></li>
-			</ul>
-		</div>
-		<div class="clearfix">
-			<img src="img-layout/logoblanc.svg" alt="logo">
-			<p>52, rue de la Roquette
-			<br/>75 011 Paris</p>
-			<p>06 23 45 67 89 - 01 23 45 67 89</p>
-			<p class="horaires">Mardi au Samedi :
-			<br/>10h - 13h et 15h - 20h</p>
-			<p class="horaires">Dimanche :
-			<br/>10h - 13h</p>
-		</div>
-		<div class="social">
-			<ul>
-				<li><a href="#"><img src="img-layout/social/facebook.svg" alt="facebook"></a></li>
-				<li><a href="#"><img src="img-layout/social/instagram.svg" alt="instagram"></a></li>
-				<li><a href="#"><img src="img-layout/social/pinterest.svg" alt="pinterest"></a></li>
-				<li><a href="#"><img src="img-layout/social/gplus.svg" alt="gplus"></a></li>
-			</ul>
-		</div>
-	</footer>
+        <div class="hover-images">
+            <div class="peintures-images">
+                <a href="detail.html"><img src="img-content/image-2.png" alt="image de l'artiste"></a>
+                <p class='left'>Rimka</p>
+                <a href="artistes.html"><img src="img-content/image-3.png" alt="image de l'artiste"></a>
+                <p class="right">Liju Nesman</p>
+
+            </div>
+            <div class="collages-images cache">
+                <a href="detail.html"><img src="img-content/image-8.png" alt="image de l'artiste"></a>
+                <p class="left">Tranoï</p>
+                <a href="artistes.html"><img src="img-content/image-9.png" alt="image de l'artiste"></a>
+                <p class="right">Dargo Marie-Jean</p>
+            </div>
+            <div class="graffiti-images cache">
+                <a href="detail.html"><img src="img-content/image-1.png" alt="image de l'artiste"></a>
+                <p class="left">Jacques Rousseau</p>
+                <a href="detail.html"><img src="img-content/image-5.png" alt="image de l'artiste"></a>
+                <p class="right">Florian Deklein</p>
+            </div>
+            <div class="marqueur-images cache">
+                <a href="detail.html"><img src="img-content/image-4.png" alt="image de l'artiste"></a>
+                <p class="left">Nyfa Tierpour</p>
+                <a href="detail.html"><img src="img-content/image-7.png" alt="image de l'artiste"></a>
+                <p class="right">Ferlitard</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>À propos de Wallery</h2>
+    <section class="horaires clearfix inner">
+        <img src="img-content/galerie-horaires.jpg" alt="galerie Wallery">
+        <div class="bandeau clearfix">
+            <h4>Horaires <br>d'ouverture</h4>
+            <p>Mardi à samedi :
+                <br>10h - 13h et 15h - 20h</p>
+            <p>Dimanche :
+                <br>10h - 13h</p>
+            <h4 class="trouver">Nous trouver</h4>
+            <div class="fleche">
+                <a href="#tocarte" data-scroll data-options='{ "easing": "easeInQuad" }'><img src="img-layout/arrow-down.svg" alt="icône flèche"></a>
+            </div>
+        </div>
+    </section>
+    <section class="carte clearfix inner">
+        <div class="col-50 clearfix frame" id="tocarte">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.1752183585704!2d2.3711529149851827!3d48.85486907928716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6720744fe77eb%3A0x1c1b3c0fba003759!2s52+Rue+de+la+Roquette%2C+75011+Paris!5e0!3m2!1sfr!2sfr!4v1489070918146" allowfullscreen></iframe>
+        </div>
+        <div class="col-50 infos">
+            <p><img src="img-layout/adressbook.svg" alt="icône adresse">52, rue de la Roquette
+                <br>75011 Paris</p>
+            <p><img src="img-layout/phone.svg" alt="icône téléphone">06 12 34 56 78
+                <br>01 23 45 67 89</p>
+            <a href="#" class="cartel">Nous contacter</a>
+        </div>
+    </section>
+    <section class="historique clearfix inner">
+        <p class="paragraphe clearfix">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam nulla et turpis pretium, et gravida lectus fringilla. Morbi eu congue quam, in ultrices nisl. Ut molestie quam nisl. Sed a neque enim. Phasellus tincidunt sollicitudin massa nec fermentum. Etiam ut nunc a urna venenatis tincidunt id at erat. Donec gravida malesuada eros, vitae mattis libero sagittis eu. Vestibulum varius felis et ante cursus, ac hendrerit diam ullamcorper. Duis cursus, urna convallis aliquet consequat, nunc quam tempus lacus, ac vehicula augue sapien sed turpis. Nulla ullamcorper faucibus turpis ac ullamcorper. Nulla facilisi. Nam ac facilisis nulla.</p>
+    </section>
+    <section class="images-galerie clearfix inner">
+        <div class="col-33">
+            <img src="img-content/galerie-1.jpg" alt="image de la galerie">
+        </div>
+        <div class="col-33">
+            <img src="img-content/galerie-2.jpg" alt="image de la galerie">
+        </div>
+        <div class="col-33">
+            <img src="img-content/galerie-3.jpg" alt="image de la galerie">
+        </div>
+    </section>
+
+    <footer class="clearfix">
+        <a data-scroll="#top" href="#"><img src="img-layout/arrowup.png" id="up" alt="icône flèche"></a>
+        <div class="plan">
+            <ul>
+                <li><a href="#">Plan de site</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="artistes.html">Artistes</a></li>
+                <li><a href="exposition.html">Expositions</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="mailto:contact@wallery.fr">Contact</a></li>
+            </ul>
+        </div>
+        <div class="clearfix">
+            <img src="img-layout/logoblanc.svg" alt="logo">
+            <p>52, rue de la Roquette
+                <br/>75 011 Paris</p>
+            <p>06 23 45 67 89 - 01 23 45 67 89</p>
+            <p class="horaires">Mardi au Samedi :
+                <br/>10h - 13h et 15h - 20h</p>
+            <p class="horaires">Dimanche :
+                <br/>10h - 13h</p>
+        </div>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="#"><img src="img-layout/social/facebook.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/social/instagram.svg" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/social/pinterest.svg" alt="pinterest"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/social/gplus.svg" alt="gplus"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 <script src="js/smooth-scroll.js"></script>
-<script src="js/script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/responsiveslides.js"></script>
+
 </html>
