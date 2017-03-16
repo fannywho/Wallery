@@ -1,5 +1,4 @@
  /*smooth scroll */
-
   smoothScroll.init();
 
 /* menu burger et recherche */
