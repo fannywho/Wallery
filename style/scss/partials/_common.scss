@@ -1,18 +1,7 @@
-/* -- Déclaration des variables -- */
-
-$font-titre : 'Raleway';
-$font-paragraphe : 'Open Sans';
-$taille-titres-d : 24px;
-$taille-titres2-d: 20px;
-$taille-titres-m : 20px;
-$taille-paragraphe-d: 17px;
-$taille-paragraphe-m: 14px;
-$min-tab: 450px;
-$max-tab: 800px;
-$max-mob: 449px;
-
-
-/* -- Classes communes à toutes les pages -- */
+/*
+** 2)
+** Classes communes à toutes les pages 
+*****************************************/
 .bandeau {
 	background: rgba(0,0,0,0.6);
 	color: #fff;
@@ -68,13 +57,6 @@ $max-mob: 449px;
 	display:none;
 }
 
-.uppertitle {
-	text-transform: uppercase;
-	font-size: $taille-titres2-d;
-	font-family: $font-titre;
-}
-
-
 .zoom {
 	overflow:hidden;
 
@@ -101,6 +83,11 @@ $max-mob: 449px;
 	}
 }
 
+
+/*************************************************
+**** Style de balises communs à toutes les pages
+*************************************************/
+
 body {
 	font-size: 17px;
 }
@@ -121,124 +108,10 @@ a {
 	text-decoration:none;
 }
 
- /* -------- HEADER ------- */
-
-header {
-	background: #000;
-	font-family: $font-titre;
-	height: 94px;
-	position:relative;
-
-		a {
-			color:#fff;
-			text-decoration:none;
-		}
-
-		.logo {
-			float:left;
-			margin:2.5% 0 0 0;
-		}
-
-		ul {
-
-			li {
-			text-transform:uppercase;
-			float:right;
-			margin:4% 4% 0 0;
-			position: relative;
-
-			&#artiste:hover {
-				div#hover-artiste {
-					width: 79px;
-				}
-			}
-			&#expo:hover {
-				div#hover-expo {
-					width: 111px;
-				}
-			}
-			&#apropos:hover {
-				div#hover-apropos {
-					width: 85px;
-				}
-			}
-
-				div {
-					position: absolute;
-					bottom: -15px;
-					left: 0;
-					height: 7px;
-					border-radius: 100px;
-
-					&#hover-artiste {
-						background: blue;
-						width: 0;
-						transition: 0.3s;
-					}
-					&#hover-expo {
-						background: red;
-						width: 0;
-						transition: 0.3s;
-					}
-					&#hover-apropos {
-						background: yellow;
-						width: 0;
-						transition: 0.3s;
-					}
-				}
-			}
-
-		}
-		
-		.search {
-			margin-top:2%;
-		}
-
-		.burger {
-			display:none;
-		}			
-	
-
-		@media only screen and (max-width: $max-tab) {
-			
-			.logo {
-				margin-top:5%;
-				margin-right:0;
-			}
-	
-			 .burger {
-				display:block;
-				float:left;
-				margin:5% 0 0 20%;
-
-			}
-
-			.search {
-				display:block;
-				float:left;
-				margin:4% 0 0 20%;
-
-			}
-
-			ul {
-				li {
-					display:none;
-				}
-			}			
-		}
-		@media only screen and (max-width: $max-mob) {
-
-			.burger {
-				margin:6.5% 0 0 10%;
-			}
-			.search {
-				margin:5% 0 0 12%;
-			}
-		}
-
-}
-
-/*menu pour le responsive qui s'affiche au clic sur l'icône burger, sous le header */
+ 
+/**********************************
+*********** Menu burger 
+**********************************/
 
 .menu {
 	font-family:$font-titre;
@@ -248,25 +121,27 @@ header {
 	width:100%;
 	background:#fff;
 
-		img {
-			padding:10% 10%;
-		}
+	img {
+		padding:10% 10%;
+	}
 
-		a {
-			color:#000;
-		}
+	a {
+		color:#000;
+	}
 
-		ul {
-			float:right;
-			margin-right:10%;
+	ul {
+		float:right;
+		margin-right:10%;
 
-			li {
-				padding:30% 15% 0 0;
-			}
+		li {
+			padding:30% 15% 0 0;
 		}
+	}
 }
 
-/*formulaire de recherche qui s'affiche sur la version mobile */
+/*************************************
+**** Search field en version mobile 
+***************************************/
 
 .recherche {
 	font-family:$font-paragraphe;
@@ -274,9 +149,11 @@ header {
 	label {
 		display:none;
 	}
+
 	a {
 		display:none;
 	}
+
 	input {
 		position:absolute;
 		top:4.5%;
@@ -330,7 +207,9 @@ header {
 	}
 }
 
-/*navigation des artistes par catégorie d'art, seulement en Desktop*/
+/*****************************************
+** Navigation flotante pour les artistes
+******************************************/
 
 .hover-artistes {
 	font-family:$font-titre;
@@ -344,14 +223,15 @@ header {
 	a {
 		color:#fff;
 	}
+
 	ul {
 		float:left;
 		padding-left:4%;
 		padding-top:8%;
 
-			li {
-				padding-bottom:70%;
-			}
+		li {
+			padding-bottom:70%;
+		}
 	}
 
 	img {
@@ -364,133 +244,30 @@ header {
 		width:85%;
 		margin-right:-2.5%;
 
-			.left {
-				color:#fff;
-				width:50%;
-				position:absolute;
-				left:10%;
-				bottom:0;
-				background:rgba(0,0,0,0.6);
-				padding:2%;
-				text-align:center;
-			}
-			.right {
-				position:absolute;
-				color:#fff;
-				right:0;
-				bottom:0;
-				width:40%;
-				padding:2%;
-				background:rgba(0,0,0,0.6);
-				text-align:center;
-			}	
+		.left {
+			color:#fff;
+			width:50%;
+			position:absolute;
+			left:10%;
+			bottom:0;
+			background:rgba(0,0,0,0.6);
+			padding:2%;
+			text-align:center;
 		}
+		.right {
+			position:absolute;
+			color:#fff;
+			right:0;
+			bottom:0;
+			width:40%;
+			padding:2%;
+			background:rgba(0,0,0,0.6);
+			text-align:center;
+		}	
+	}
 
 	@media only screen and (max-width: $max-tab) {
 		display:none;
 	}
 
-}
-
-
-footer {
-	clear:both;
-	background-color: #000;
-	color: #fff;
-	font-family: $font-paragraphe;
-	position: relative;
-
-		@media only screen and (max-width: $max-tab) {
-			.plan {
-				display: none;
-			}
-		}
-		
-		img#up {
-			position: absolute;
-			top: -60px;
-			right: 50px;
-
-			&:hover {
-					background: rgba(0,0,0,0.1);
-					transition: 0.5s;
-				}
-		}
-
-		a {
-			text-decoration: none;
-			color: #fff;
-		}
-
-		div {
-			padding-top: 50px;
-			text-align: center;
-			line-height: 28px;
-			width: 30.5%;
-			float:left;
-			margin: 1%;
-
-			@media only screen and (max-width: $max-tab) {
-				float: none;
-				width: 99%;
-			}
-
-				p {
-					margin-bottom: 30px;
-
-					&.horaires {
-						float: left;
-						margin-left: 15%;
-
-						@media only screen and (max-width: $max-tab) {
-							float: none;
-							margin: 0;
-						}
-					}
-				}
-			&.social {
-				ul {
-					text-align: center;
-
-					li {
-					display: inline-block;
-					margin: 0 23px;
-
-					@media only screen and (max-width: $max-tab) {
-						margin: 0 45px;
-
-						@media only screen and (max-width: $max-mob) {
-							margin: 0 15px;
-						}
-
-						&:first-child{
-							margin-left: 0;
-						}
-						&:last-child{
-							margin-right: 0;
-						}
-					}
-
-					}
-				}
-				
-				img {
-					width: 40px;
-
-					@media only screen and (min-width: $min-tab) and (max-width: $max-tab) {
-						width: 60px;
-					}
-				}
-			}
-		}
-
-		li {
-			line-height: 45px;
-
-			&:first-child {
-				text-transform: uppercase;
-				line-height: auto;
-				font-size: 20px;
-			}
-		}
 }

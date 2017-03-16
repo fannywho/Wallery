@@ -1,8 +1,31 @@
 @charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/*********************************
+*** Wallery
+** Auteurs : Julie Manhes et Fanny Pourtier
+** Mars 2017
+** Version : 1
+**
+*** SOMMAIRE :
+**
+** 1) Reset (+ clearfix, + box-sizing)
+** 2) Classes et style de balises communes ├á toutes les pages
+** 3) Slider de la homepage
+** 4) Accueil
+** 5) Liste des artistes
+** 6) D├®tail de l'artiste
+** 7) Expositions
+** 8) A propos
+** 9) Header
+** 10) Footer
+**
+***********************************/
+/*
+** 1) Reset
+**
+** http://meyerweb.com/eric/tools/css/reset/ 
+** v2.0 | 20110126
+** License: none (public domain) 
+*********************************************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -59,8 +82,10 @@ table {
 .clearfix:after {
   clear: both; }
 
-/* -- D├®claration des variables -- */
-/* -- Classes communes ├á toutes les pages -- */
+/*
+** 2)
+** Classes communes ├á toutes les pages 
+*****************************************/
 .bandeau {
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
@@ -105,11 +130,6 @@ table {
 .cache {
   display: none; }
 
-.uppertitle {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-family: "Raleway"; }
-
 .zoom {
   overflow: hidden; }
   .zoom img {
@@ -129,6 +149,9 @@ table {
     .inner {
       width: 93%; } }
 
+/*************************************************
+**** Style de balises communs ├á toutes les pages
+*************************************************/
 body {
   font-size: 17px; }
 
@@ -145,72 +168,9 @@ h2 {
 a {
   text-decoration: none; }
 
-/* -------- HEADER ------- */
-header {
-  background: #000;
-  font-family: "Raleway";
-  height: 94px;
-  position: relative; }
-  header a {
-    color: #fff;
-    text-decoration: none; }
-  header .logo {
-    float: left;
-    margin: 2.5% 0 0 0; }
-  header ul li {
-    text-transform: uppercase;
-    float: right;
-    margin: 4% 4% 0 0;
-    position: relative; }
-    header ul li#artiste:hover div#hover-artiste {
-      width: 79px; }
-    header ul li#expo:hover div#hover-expo {
-      width: 111px; }
-    header ul li#apropos:hover div#hover-apropos {
-      width: 85px; }
-    header ul li div {
-      position: absolute;
-      bottom: -15px;
-      left: 0;
-      height: 7px;
-      border-radius: 100px; }
-      header ul li div#hover-artiste {
-        background: blue;
-        width: 0;
-        transition: 0.3s; }
-      header ul li div#hover-expo {
-        background: red;
-        width: 0;
-        transition: 0.3s; }
-      header ul li div#hover-apropos {
-        background: yellow;
-        width: 0;
-        transition: 0.3s; }
-  header .search {
-    margin-top: 2%; }
-  header .burger {
-    display: none; }
-  @media only screen and (max-width: 800px) {
-    header .logo {
-      margin-top: 5%;
-      margin-right: 0; }
-    header .burger {
-      display: block;
-      float: left;
-      margin: 5% 0 0 20%; }
-    header .search {
-      display: block;
-      float: left;
-      margin: 4% 0 0 20%; }
-    header ul li {
-      display: none; } }
-  @media only screen and (max-width: 449px) {
-    header .burger {
-      margin: 6.5% 0 0 10%; }
-    header .search {
-      margin: 5% 0 0 12%; } }
-
-/*menu pour le responsive qui s'affiche au clic sur l'ic├┤ne burger, sous le header */
+/**********************************
+*********** Menu burger 
+**********************************/
 .menu {
   font-family: "Raleway";
   text-transform: uppercase;
@@ -228,7 +188,9 @@ header {
     .menu ul li {
       padding: 30% 15% 0 0; }
 
-/*formulaire de recherche qui s'affiche sur la version mobile */
+/*************************************
+**** Search field en version mobile 
+***************************************/
 .recherche {
   font-family: "Open Sans"; }
   .recherche label {
@@ -272,7 +234,9 @@ header {
       left: 17%;
       width: 70%; } }
 
-/*navigation des artistes par cat├®gorie d'art, seulement en Desktop*/
+/*****************************************
+** Navigation flotante pour les artistes
+******************************************/
 .hover-artistes {
   font-family: "Raleway";
   z-index: 100;
@@ -318,74 +282,10 @@ header {
     .hover-artistes {
       display: none; } }
 
-footer {
-  clear: both;
-  background-color: #000;
-  color: #fff;
-  font-family: "Open Sans";
-  position: relative; }
-  @media only screen and (max-width: 800px) {
-    footer .plan {
-      display: none; } }
-  footer img#up {
-    position: absolute;
-    top: -60px;
-    right: 50px; }
-    footer img#up:hover {
-      background: rgba(0, 0, 0, 0.1);
-      transition: 0.5s; }
-  footer a {
-    text-decoration: none;
-    color: #fff; }
-  footer div {
-    padding-top: 50px;
-    text-align: center;
-    line-height: 28px;
-    width: 30.5%;
-    float: left;
-    margin: 1%; }
-    @media only screen and (max-width: 800px) {
-      footer div {
-        float: none;
-        width: 99%; } }
-    footer div p {
-      margin-bottom: 30px; }
-      footer div p.horaires {
-        float: left;
-        margin-left: 15%; }
-        @media only screen and (max-width: 800px) {
-          footer div p.horaires {
-            float: none;
-            margin: 0; } }
-    footer div.social ul {
-      text-align: center; }
-      footer div.social ul li {
-        display: inline-block;
-        margin: 0 23px; }
-        @media only screen and (max-width: 800px) {
-          footer div.social ul li {
-            margin: 0 45px; } }
-  @media only screen and (max-width: 800px) and (max-width: 449px) {
-    footer div.social ul li {
-      margin: 0 15px; } }
-        @media only screen and (max-width: 800px) {
-            footer div.social ul li:first-child {
-              margin-left: 0; }
-            footer div.social ul li:last-child {
-              margin-right: 0; } }
-    footer div.social img {
-      width: 40px; }
-      @media only screen and (min-width: 450px) and (max-width: 800px) {
-        footer div.social img {
-          width: 60px; } }
-  footer li {
-    line-height: 45px; }
-    footer li:first-child {
-      text-transform: uppercase;
-      line-height: auto;
-      font-size: 20px; }
-
-/*! http://responsiveslides.com v1.55 by @viljamis */
+/*
+** 3) Slider
+** http://responsiveslides.com v1.55 by @viljamis 
+***************************************************/
 .rslides {
   position: relative;
   list-style: none;
@@ -496,8 +396,129 @@ section.caroussel {
   background: #222;
   background: rgba(0, 0, 0, 0.8); }
 
-/* -------- LISTE ARTISTES ------- */
-/*pour le responsive, les images s'empilent */
+@media only screen and (max-width: 449px) {
+  section.caroussel.hidden {
+    display: none; } }
+section.caroussel p {
+  font-size: 17px;
+  font-family: "Open Sans";
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  line-height: 30px; }
+  @media only screen and (max-width: 449px) {
+    section.caroussel p {
+      font-size: 14px; } }
+section.caroussel a.bouton {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Raleway";
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  z-index: 999; }
+  section.caroussel a.bouton:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s; }
+  @media only screen and (max-width: 800px) {
+    section.caroussel a.bouton {
+      bottom: 20px; } }
+section.caroussel img.arrowdown {
+  width: 73px;
+  position: absolute;
+  bottom: -60px;
+  z-index: 2;
+  left: 50%;
+  margin-left: -50px; }
+  section.caroussel img.arrowdown:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transition: 0.5s; }
+  @media only screen and (max-width: 449px) {
+    section.caroussel img.arrowdown {
+      left: 36%; } }
+
+/*
+** 4) Accueil
+*******************************************/
+section.header-mobile {
+  text-align: center; }
+  @media only screen and (min-width: 450px) {
+    section.header-mobile {
+      display: none; } }
+  section.header-mobile img {
+    width: 100%; }
+  section.header-mobile p {
+    background: #333;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left; }
+    section.header-mobile p a {
+      color: #fff;
+      font-size: 14px;
+      font-family: "Open Sans";
+      line-height: 20px;
+      text-decoration: none; }
+      section.header-mobile p a span {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: "Raleway"; }
+  @media only screen and (max-width: 449px) {
+    section.header-mobile a.bouton {
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #333;
+      font-size: 14px;
+      font-family: "Raleway";
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: 1px solid #333; } }
+
+.uppertitle {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Raleway"; }
+
+/*****************************************
+***** Projecteur
+*****************************************/
+section.projecteur {
+  position: relative;
+  top: 100px; }
+  @media only screen and (max-width: 449px) {
+    section.projecteur {
+      position: static;
+      margin-top: 25px;
+      margin-bottom: 50px; } }
+  section.projecteur div {
+    margin-bottom: 150px; }
+    @media only screen and (max-width: 449px) {
+      section.projecteur div {
+        margin-bottom: 50px; } }
+  section.projecteur img {
+    width: 100%;
+    height: auto; }
+  section.projecteur h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-size: 17px;
+    margin-top: 10px; }
+    section.projecteur h3 a {
+      text-decoration: none;
+      color: #000; }
+
+/*
+** 5) Artistes
+*************************************/
 section.filtres div.filtres-contenu a {
   color: #000; }
 section.filtres div.filtres-contenu ul li {
@@ -549,7 +570,9 @@ section.artistes {
       width: 100%;
       padding: 2%; } }
 
-/* -------- D├ëTAIL ARTISTES ------- */
+/***
+** 6) Page d├®tail de l'artiste
+******************************************/
 section.description {
   position: relative; }
   section.description h2,
@@ -589,15 +612,111 @@ section.detail-images {
     padding: 2%;
     margin-bottom: 2%; }
 
-/* -------- ├Ç PROPOS ------- */
-/*pour le responsive le bandeau de l'image se place en dessous d'elle*/
+/*
+** 7) Expositions
+*****************************************/
+section.expo-actuelle {
+  text-align: justify; }
+  section.expo-actuelle img {
+    display: block;
+    width: 100%; }
+  section.expo-actuelle p {
+    font-size: 17px;
+    font-family: "Open Sans";
+    line-height: 30px; }
+    @media only screen and (max-width: 449px) {
+      section.expo-actuelle p {
+        font-size: 14px; } }
+    section.expo-actuelle p.titre {
+      margin-top: 25px;
+      text-align: center;
+      font-family: "Raleway";
+      font-size: 20px; }
+      @media only screen and (max-width: 449px) {
+        section.expo-actuelle p.titre {
+          font-size: 14px; } }
+    section.expo-actuelle p.date-expo {
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 25px; }
+      @media only screen and (max-width: 449px) {
+        section.expo-actuelle p.date-expo {
+          font-size: 14px; } }
+
+section.expo-a-venir {
+  margin: 50px auto; }
+  section.expo-a-venir div {
+    margin: 0 1%;
+    font-family: "Open Sans"; }
+    section.expo-a-venir div figure {
+      position: relative; }
+      @media only screen and (min-width: 450px) and (max-width: 800px) {
+        section.expo-a-venir div figure {
+          margin-top: 50px; } }
+      @media only screen and (max-width: 449px) {
+        section.expo-a-venir div figure {
+          margin-top: 50px; } }
+    section.expo-a-venir div div.bandeau {
+      bottom: 1px;
+      left: 0;
+      z-index: 999;
+      padding: 10px;
+      width: 100%;
+      margin: 0; }
+    section.expo-a-venir div img {
+      width: 100%; }
+    section.expo-a-venir div div.cartel {
+      margin: 10px 0;
+      font-style: italic;
+      padding-left: 10px; }
+      @media only screen and (max-width: 449px) {
+        section.expo-a-venir div div.cartel {
+          font-size: 14px; } }
+    section.expo-a-venir div p {
+      font-size: 17px;
+      line-height: 30px; }
+      @media only screen and (max-width: 449px) {
+        section.expo-a-venir div p {
+          font-size: 14px; } }
+
+section.calendrier {
+  margin: 50px auto 100px;
+  font-family: "Open Sans";
+  font-size: 17px; }
+  section.calendrier div.agenda {
+    margin-top: 30px;
+    padding: 5px;
+    border: 1px solid #000;
+    display: table; }
+    @media only screen and (min-width: 450px) and (max-width: 800px) {
+      section.calendrier div.agenda {
+        width: 48%;
+        margin-left: 0; } }
+    @media only screen and (max-width: 449px) {
+      section.calendrier div.agenda {
+        width: 100%; } }
+    section.calendrier div.agenda p {
+      padding-left: 10px; }
+      section.calendrier div.agenda p.date {
+        font-family: "Raleway";
+        display: table-cell;
+        border-right: 1px solid #000;
+        padding: 5px;
+        width: 20%;
+        text-align: center; }
+        section.calendrier div.agenda p.date span {
+          font-size: 36px;
+          display: block; }
+
+/*
+** 8) A propos
+***********************************/
 section.horaires {
   position: relative; }
   section.horaires img {
     width: 100%;
     position: relative; }
   section.horaires div.bandeau {
-    position: absolute;
     top: 0;
     font-family: "Open Sans";
     width: 30%;
@@ -683,215 +802,140 @@ section.images-galerie {
       section.images-galerie img {
         height: auto; } }
 
-/******************************************
-*** Carousel 
-*******************************************/
-@media only screen and (max-width: 449px) {
-  section.caroussel.hidden {
-    display: none; } }
-section.caroussel p {
-  font-size: 17px;
-  font-family: "Open Sans";
-  color: #fff;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  padding: 20px;
-  line-height: 30px; }
-  @media only screen and (max-width: 449px) {
-    section.caroussel p {
-      font-size: 14px; } }
-section.caroussel a.bouton {
-  border: 1px solid #fff;
-  padding: 10px 20px;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "Raleway";
-  position: absolute;
-  bottom: 30px;
-  right: 15px;
-  z-index: 999; }
-  section.caroussel a.bouton:hover {
-    background: #fff;
-    color: #000;
-    transition: 0.5s; }
-  @media only screen and (max-width: 800px) {
-    section.caroussel a.bouton {
-      bottom: 20px; } }
-section.caroussel img.arrowdown {
-  width: 73px;
-  position: absolute;
-  bottom: -60px;
-  z-index: 2;
-  left: 50%;
-  margin-left: -50px; }
-  section.caroussel img.arrowdown:hover {
-    background: rgba(0, 0, 0, 0.1);
-    transition: 0.5s; }
-  @media only screen and (max-width: 449px) {
-    section.caroussel img.arrowdown {
-      left: 36%; } }
-
-section.header-mobile {
-  text-align: center; }
-  @media only screen and (min-width: 450px) {
-    section.header-mobile {
-      display: none; } }
-  section.header-mobile img {
-    width: 100%; }
-  section.header-mobile p {
-    background: #333;
-    display: block;
-    width: 100%;
-    padding: 10px;
-    text-align: left; }
-    section.header-mobile p a {
-      color: #fff;
-      font-size: 14px;
-      font-family: "Open Sans";
-      line-height: 20px;
-      text-decoration: none; }
-      section.header-mobile p a span {
-        text-transform: uppercase;
-        font-size: 14px;
-        font-family: "Raleway"; }
-  @media only screen and (max-width: 449px) {
-    section.header-mobile a.bouton {
-      display: inline-block;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #333;
-      font-size: 14px;
-      font-family: "Raleway";
-      margin-top: 15px;
-      padding: 10px 20px;
-      border: 1px solid #333; } }
-
-/*****************************************
-***** Projecteur
-*****************************************/
-section.projecteur {
-  position: relative;
-  top: 100px; }
-  @media only screen and (max-width: 449px) {
-    section.projecteur {
-      position: static;
-      margin-top: 25px;
-      margin-bottom: 50px; } }
-  section.projecteur div {
-    margin-bottom: 150px; }
-    @media only screen and (max-width: 449px) {
-      section.projecteur div {
-        margin-bottom: 50px; } }
-  section.projecteur img {
-    width: 100%;
-    height: auto; }
-  section.projecteur h3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Open Sans";
-    font-size: 17px;
-    margin-top: 10px; }
-    section.projecteur h3 a {
-      text-decoration: none;
-      color: #000; }
-
-/*********************************
-****** Expositions
+/*
+** 9) Header
 *********************************/
-section.expo-actuelle {
-  text-align: justify; }
-  section.expo-actuelle img {
-    display: block;
-    width: 100%; }
-  section.expo-actuelle p {
-    font-size: 17px;
-    font-family: "Open Sans";
-    line-height: 30px; }
-    @media only screen and (max-width: 449px) {
-      section.expo-actuelle p {
-        font-size: 14px; } }
-    section.expo-actuelle p.titre {
-      margin-top: 25px;
-      text-align: center;
-      font-family: "Raleway";
-      font-size: 20px; }
-      @media only screen and (max-width: 449px) {
-        section.expo-actuelle p.titre {
-          font-size: 14px; } }
-    section.expo-actuelle p.date-expo {
-      font-style: italic;
-      text-align: center;
-      margin-bottom: 25px; }
-      @media only screen and (max-width: 449px) {
-        section.expo-actuelle p.date-expo {
-          font-size: 14px; } }
-
-section.expo-a-venir {
-  margin: 50px auto; }
-  section.expo-a-venir div {
-    margin: 0 1%;
-    font-family: "Open Sans"; }
-    section.expo-a-venir div figure {
-      position: relative; }
-      @media only screen and (min-width: 450px) and (max-width: 800px) {
-        section.expo-a-venir div figure {
-          margin-top: 50px; } }
-      @media only screen and (max-width: 449px) {
-        section.expo-a-venir div figure {
-          margin-top: 50px; } }
-    section.expo-a-venir div div.bandeau {
-      bottom: 1px;
+header {
+  background: #000;
+  font-family: "Raleway";
+  height: 94px;
+  position: relative; }
+  header a {
+    color: #fff;
+    text-decoration: none; }
+  header .logo {
+    float: left;
+    margin: 2.5% 0 0 0; }
+  header ul li {
+    text-transform: uppercase;
+    float: right;
+    margin: 4% 4% 0 0;
+    position: relative; }
+    header ul li#artiste:hover div#hover-artiste {
+      width: 79px; }
+    header ul li#expo:hover div#hover-expo {
+      width: 111px; }
+    header ul li#apropos:hover div#hover-apropos {
+      width: 85px; }
+    header ul li div {
+      position: absolute;
+      bottom: -15px;
       left: 0;
-      z-index: 999;
-      padding: 10px;
-      width: 100%;
-      margin: 0; }
-    section.expo-a-venir div img {
-      width: 100%; }
-    section.expo-a-venir div div.cartel {
-      margin: 10px 0;
-      font-style: italic;
-      padding-left: 10px; }
-      @media only screen and (max-width: 449px) {
-        section.expo-a-venir div div.cartel {
-          font-size: 14px; } }
-    section.expo-a-venir div p {
-      font-size: 17px;
-      line-height: 30px; }
-      @media only screen and (max-width: 449px) {
-        section.expo-a-venir div p {
-          font-size: 14px; } }
+      height: 7px;
+      border-radius: 100px; }
+      header ul li div#hover-artiste {
+        background: blue;
+        width: 0;
+        transition: 0.3s; }
+      header ul li div#hover-expo {
+        background: red;
+        width: 0;
+        transition: 0.3s; }
+      header ul li div#hover-apropos {
+        background: yellow;
+        width: 0;
+        transition: 0.3s; }
+  header .search {
+    margin-top: 2%; }
+  header .burger {
+    display: none; }
+  @media only screen and (max-width: 800px) {
+    header .logo {
+      margin-top: 5%;
+      margin-right: 0; }
+    header .burger {
+      display: block;
+      float: left;
+      margin: 5% 0 0 20%; }
+    header .search {
+      display: block;
+      float: left;
+      margin: 4% 0 0 20%; }
+    header ul li {
+      display: none; } }
+  @media only screen and (max-width: 449px) {
+    header .burger {
+      margin: 6.5% 0 0 10%; }
+    header .search {
+      margin: 5% 0 0 12%; } }
 
-section.calendrier {
-  margin: 50px auto 100px;
+/*
+** 10) Footer
+********************************/
+footer {
+  clear: both;
+  background-color: #000;
+  color: #fff;
   font-family: "Open Sans";
-  font-size: 17px; }
-  section.calendrier div.agenda {
-    margin-top: 30px;
-    padding: 5px;
-    border: 1px solid #000;
-    display: table; }
-    @media only screen and (min-width: 450px) and (max-width: 800px) {
-      section.calendrier div.agenda {
-        width: 48%;
-        margin-left: 0; } }
-    @media only screen and (max-width: 449px) {
-      section.calendrier div.agenda {
-        width: 100%; } }
-    section.calendrier div.agenda p {
-      padding-left: 10px; }
-    section.calendrier div.agenda date {
-      font-family: "Raleway";
-      display: table-cell;
-      border-right: 1px solid #000;
-      padding: 5px;
-      width: 20%;
+  position: relative; }
+  @media only screen and (max-width: 800px) {
+    footer .plan {
+      display: none; } }
+  footer img#up {
+    position: absolute;
+    top: -60px;
+    right: 50px; }
+    footer img#up:hover {
+      background: rgba(0, 0, 0, 0.1);
+      transition: 0.5s; }
+  footer a {
+    text-decoration: none;
+    color: #fff; }
+  footer div {
+    padding-top: 50px;
+    text-align: center;
+    line-height: 28px;
+    width: 30.5%;
+    float: left;
+    margin: 1%; }
+    @media only screen and (max-width: 800px) {
+      footer div {
+        float: none;
+        width: 99%; } }
+    footer div p {
+      margin-bottom: 30px; }
+      footer div p.horaires {
+        float: left;
+        margin-left: 15%; }
+        @media only screen and (max-width: 800px) {
+          footer div p.horaires {
+            float: none;
+            margin: 0; } }
+    footer div.social ul {
       text-align: center; }
-      section.calendrier div.agenda date span {
-        font-size: 36px;
-        display: block; }
+      footer div.social ul li {
+        display: inline-block;
+        margin: 0 23px; }
+        footer div.social ul li:first-child {
+          margin-left: 0; }
+        footer div.social ul li:last-child {
+          margin-right: 0; }
+        @media only screen and (max-width: 800px) {
+          footer div.social ul li {
+            margin: 0 45px; } }
+        @media only screen and (max-width: 449px) {
+          footer div.social ul li {
+            margin: 0 15px; } }
+    footer div.social img {
+      width: 40px; }
+      @media only screen and (min-width: 450px) and (max-width: 800px) {
+        footer div.social img {
+          width: 60px; } }
+  footer li {
+    line-height: 45px; }
+    footer li:first-child {
+      text-transform: uppercase;
+      line-height: auto;
+      font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

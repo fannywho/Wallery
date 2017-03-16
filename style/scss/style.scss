@@ -1,8 +1,34 @@
-@import 'partials/reset.scss';
-@import 'partials/_clearfix.scss';
-@import 'partials/common.scss';
+@charset 'utf-8';
+
+/*********************************
+*** Wallery
+** Auteurs : Julie Manhes et Fanny Pourtier
+** Mars 2017
+** Version : 1
+**
+*** SOMMAIRE :
+**
+** 1) Reset (+ clearfix, + box-sizing)
+** 2) Classes et style de balises communes à toutes les pages
+** 3) Slider de la homepage
+** 4) Accueil
+** 5) Liste des artistes
+** 6) Détail de l'artiste
+** 7) Expositions
+** 8) A propos
+** 9) Header
+** 10) Footer
+**
+***********************************/
+
+@import 'partials/_variables.scss';
+@import 'partials/_reset.scss';
+@import 'partials/_common.scss';
 @import 'partials/_carouselresponsiveslides.scss';
-@import 'partials/_carouselthemes.scss';
-@import 'partials/julie.scss';
 @import 'partials/_accueil.scss';
+@import 'partials/_artistes.scss';
+@import 'partials/_artistedetail.scss';
 @import 'partials/_expo.scss';
+@import 'partials/_apropos.scss';
+@import 'partials/_header.scss';
+@import 'partials/_footer.scss';

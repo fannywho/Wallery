@@ -1,0 +1,118 @@
+/*
+** 9) Header
+*********************************/
+
+header {
+	background: #000;
+	font-family: $font-titre;
+	height: 94px;
+	position:relative;
+
+		a {
+			color:#fff;
+			text-decoration:none;
+		}
+
+		.logo {
+			float:left;
+			margin:2.5% 0 0 0;
+		}
+
+		ul {
+
+			li {
+			text-transform:uppercase;
+			float:right;
+			margin:4% 4% 0 0;
+			position: relative;
+
+			&#artiste:hover {
+				div#hover-artiste {
+					width: 79px;
+				}
+			}
+			&#expo:hover {
+				div#hover-expo {
+					width: 111px;
+				}
+			}
+			&#apropos:hover {
+				div#hover-apropos {
+					width: 85px;
+				}
+			}
+
+				div {
+					position: absolute;
+					bottom: -15px;
+					left: 0;
+					height: 7px;
+					border-radius: 100px;
+
+					&#hover-artiste {
+						background: blue;
+						width: 0;
+						transition: 0.3s;
+					}
+					&#hover-expo {
+						background: red;
+						width: 0;
+						transition: 0.3s;
+					}
+					&#hover-apropos {
+						background: yellow;
+						width: 0;
+						transition: 0.3s;
+					}
+				}
+			}
+
+		}
+		
+		.search {
+			margin-top:2%;
+		}
+
+		.burger {
+			display:none;
+		}			
+	
+
+		@media only screen and (max-width: $max-tab) {
+			
+			.logo {
+				margin-top:5%;
+				margin-right:0;
+			}
+	
+			 .burger {
+				display:block;
+				float:left;
+				margin:5% 0 0 20%;
+
+			}
+
+			.search {
+				display:block;
+				float:left;
+				margin:4% 0 0 20%;
+
+			}
+
+			ul {
+				li {
+					display:none;
+				}
+			}			
+		}
+		@media only screen and (max-width: $max-mob) {
+
+			.burger {
+				margin:6.5% 0 0 10%;
+			}
+			.search {
+				margin:5% 0 0 12%;
+			}
+		}
+
+}

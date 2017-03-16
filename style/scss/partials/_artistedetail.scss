@@ -1,0 +1,60 @@
+/***
+** 6) Page détail de l'artiste
+******************************************/
+
+section.description {
+    position: relative;
+
+    h2,
+    h4,
+    .icon {
+        text-align: center;
+    }
+
+    h4 {
+        font-family: $font-paragraphe;
+        padding-bottom: 5%;
+        border-bottom: 1px solid #000;
+        font-size: 20px;
+    }
+
+    .icon {
+        position: absolute;
+        z-index: 2;
+        left: 48.5%;
+        top: 88%;
+        color: #000;
+    }
+
+    .paragraphe {
+        padding-bottom: 4%;
+        font-family: $font-paragraphe;
+        line-height: 30px;
+    }
+}
+
+section.detail-images {
+    margin-top: 4%;
+    margin-bottom: 10%;
+
+    div.image-grande {
+
+        img {
+            width: 100%;
+            margin-bottom: 2%;
+        }
+
+        @media only screen and (max-width: $max-mob) {
+            width: 100%;
+            padding: 0;
+            margin: 10% 0;
+        }
+        
+        .cartel {
+            text-align: center;
+            font-family: $font-paragraphe;
+            padding: 2%;
+            margin-bottom: 2%;
+        }
+    }
+}

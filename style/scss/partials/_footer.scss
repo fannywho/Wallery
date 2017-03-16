@@ -1,0 +1,104 @@
+/*
+** 10) Footer
+********************************/
+footer {
+	clear:both;
+	background-color: #000;
+	color: #fff;
+	font-family: $font-paragraphe;
+	position: relative;
+
+	@media only screen and (max-width: $max-tab) {
+		.plan {
+			display: none;
+		}
+	}
+	
+	img#up {
+		position: absolute;
+		top: -60px;
+		right: 50px;
+
+		&:hover {
+				background: rgba(0,0,0,0.1);
+				transition: 0.5s;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	div {
+		padding-top: 50px;
+		text-align: center;
+		line-height: 28px;
+		width: 30.5%;
+		float:left;
+		margin: 1%;
+
+		@media only screen and (max-width: $max-tab) {
+			float: none;
+			width: 99%;
+		}
+
+		p {
+			margin-bottom: 30px;
+
+			&.horaires {
+				float: left;
+				margin-left: 15%;
+
+				@media only screen and (max-width: $max-tab) {
+					float: none;
+					margin: 0;
+				}
+			}
+		}
+
+		&.social {
+			ul {
+				text-align: center;
+
+				li {
+					display: inline-block;
+					margin: 0 23px;
+
+					&:first-child{
+						margin-left: 0;
+					}
+					&:last-child{
+						margin-right: 0;
+					}
+
+					@media only screen and (max-width: $max-tab) {
+						margin: 0 45px;
+					}
+
+					@media only screen and (max-width: $max-mob) {
+						margin: 0 15px;
+					}
+				}
+			}
+			
+			img {
+				width: 40px;
+
+				@media only screen and (min-width: $min-tab) and (max-width: $max-tab) {
+					width: 60px;
+				}
+			}
+		}
+	}
+
+	li {
+		line-height: 45px;
+
+		&:first-child {
+			text-transform: uppercase;
+			line-height: auto;
+			font-size: 20px;
+		}
+	}
+}

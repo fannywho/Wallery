@@ -1,6 +1,6 @@
-/*********************************
-****** Expositions
-*********************************/
+/*
+** 7) Expositions
+*****************************************/
 
 section.expo-actuelle {
 	text-align: justify;
@@ -118,9 +118,8 @@ section.calendrier {
 
 		p {
 			padding-left: 10px;
-		}
 
-		date {
+			&.date {
 			font-family: $font-titre;
 			display: table-cell;
 			border-right: 1px solid #000;
@@ -128,9 +127,10 @@ section.calendrier {
 			width: 20%;
 			text-align: center;
 
-			span {
-				font-size: 36px;
-				display: block;
+				span {
+					font-size: 36px;
+					display: block;
+				}
 			}
 		}
 	}
