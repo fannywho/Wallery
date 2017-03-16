@@ -40,9 +40,9 @@ $max-mob: 449px;
 }
 
 .col-33 {
-	width: 30.5%;
-	float:left;
-	margin: 1%;
+	width: 32%;
+    float: left;
+    margin: 0.6%;
 
 	@media only screen and (max-width: $max-tab) {
 		width: 100%;
@@ -58,6 +58,12 @@ $max-mob: 449px;
 
 .paragraphe {
 	text-align: justify;
+}
+
+.uppertitle {
+	text-transform: uppercase;
+	font-size: $taille-titres2-d;
+	font-family: $font-titre;
 }
 
 .inner {
@@ -82,6 +88,7 @@ header {
 	background: #000;
 	font-family: $font-titre;
 	height: 94px;
+	position:relative;
 
 		a {
 			color:#fff;
@@ -90,25 +97,107 @@ header {
 
 		.logo {
 			float:left;
-			margin:2% 33.5% 0 0;
+			margin:2.5% 0 0 0;
 		}
 
 		ul {
 
 			li {
 			text-transform:uppercase;
-			float:left;
-			margin: 4% 5% 0 0;
+			float:right;
+			margin:4% 4% 0 0;
+			position: relative;
+
+			&#artiste:hover {
+				div#hover-artiste {
+					width: 79px;
+				}
+			}
+			&#expo:hover {
+				div#hover-expo {
+					width: 111px;
+				}
+			}
+			&#apropos:hover {
+				div#hover-apropos {
+					width: 85px;
+				}
 			}
 
-		.search {
-			margin-right:0;
-			margin-top:2%;
-			}
+				div {
+					position: absolute;
+					bottom: -15px;
+					left: 0;
+					height: 7px;
+					border-radius: 100px;
 
+					&#hover-artiste {
+						background: blue;
+						width: 0;
+						transition: 0.3s;
+					}
+					&#hover-expo {
+						background: red;
+						width: 0;
+						transition: 0.3s;
+					}
+					&#hover-apropos {
+						background: yellow;
+						width: 0;
+						transition: 0.3s;
+					}
+				}
+			}
 		}
+
+		
+		.search {
+			margin-top:2%;
+		}
+
+		.burger {
+			display:none;
+		}			
+	
+
+		@media only screen and (max-width: $max-tab) {
 			
-	}
+			.logo {
+				margin-top:5%;
+				margin-right:0;
+			}
+	
+			 .burger {
+				display:block;
+				float:left;
+				margin:5% 0 0 20%;
+
+			}
+
+			.search {
+				display:block;
+				float:left;
+				margin:4% 0 0 20%;
+
+			}
+
+			ul {
+				li {
+					display:none;
+				}
+			}			
+		}
+		@media only screen and (max-width: $max-mob) {
+
+			.burger {
+				margin:6.5% 0 0 10%;
+			}
+			.search {
+				margin:5% 0 0 12%;
+			}
+		}
+
+}
 
 h2 {
 	font-size: $taille-titres-d;
@@ -138,6 +227,11 @@ footer {
 			position: absolute;
 			top: -60px;
 			right: 50px;
+
+			&:hover {
+					background: rgba(0,0,0,0.1);
+					transition: 0.5s;
+				}
 		}
 
 		a {
