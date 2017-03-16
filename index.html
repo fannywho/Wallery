@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:400,400i,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="js/responsiveslides.js"></script>
 	<title>Wallery</title>
+	<script>
+    $(function () {
+
+      $("#slider").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        maxwidth: "",
+        namespace: "centered-btns"
+      });
+
+    });
+  </script>
 </head>
 <body>
-	<header class="clearfix" id="up">
-		<div class="inner">
+		<header class="clearfix" id="up">
+		<div class="inner clearfix">
 			<h1><a href="index.html"><img src="img-layout/logoblanc.svg" alt="wallery" class="logo"></a></h1>
-			<nav>
+			<nav class="clearfix">
 				<ul>
 					<li class="search"><a href="#"><img src="img-layout/loupe.svg" alt="icône de recherche"></a></li>
 					<li class="burger"><a href="#"><img src="img-layout/burger.svg" alt="icône de menu responsive"></a></li>
-					<li><a href="apropos.html">À propos</a></li>
-					<li><a href="exposition.html">Expositions</a></li>
-					<li class="artistes-nav"><a href="artistes.html">Artistes</a></li>
+					<li id="apropos"><a href="apropos.html">À propos</a>
+					<div id="hover-apropos"></div></li>
+					<li id="expo"><a href="exposition.html">Expositions</a>
+					<div id="hover-expo"></div></li>
+					<li class="artistes-nav" id="artiste"><a href="artistes.html">Artistes</a>
+					<div id="hover-artiste"></div></li>
 				</ul>
 			</nav>			
 		</div>
 	</header>
+	<div class="recherche cache">
+		<label>Entrez votre recherche</label>
+		<br><input type='textarea'>
+		<br><a href="#" class='cartel'>Envoyer</a>
+		<a href="#" class="cartel boutonAnnule">Annuler</a>
+	</div>
+
+	<div class="menu cache">
+		<a href="#" class="annuler"><img src="img-layout/cancel.png" alt="icône annulation"></a>
+			<ul>
+				<li><a href="artistes.html">Artistes</a></li>
+				<li><a href="exposition.html">Expositions</a></li>
+				<li><a href="apropos.html">À propos</a></li>
+			</ul>
+	</div>
 
 	<div class="hover-artistes cache">
 		<ul>
@@ -59,54 +93,53 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="menu cache">
-		<a href="#" class="annuler"><img src="img-layout/cancel.png" alt="icône annulation"></a>
-		<ul>
-			<li><a href="artistes.html">Artistes</a></li>
-			<li><a href="exposition.html">Expositions</a></li>
-			<li><a href="apropos.html">À propos</a></li>
-		</ul>
-	</div>
-
-	<div class="recherche cache">
-		<label>Entrez votre recherche</label>
-		<br><input type='textarea'>
-		<br><a href="#" class="cartel">Envoyer</a>
-		<a href="#" class="cartel boutonAnnule">Annuler</a>
-	</div>
-		<section class="caroussel clearfix">
-			<!-- <img src="img-content/carousel01.jpg" alt="exposition"> -->
-			<div class="bandeau">
-				<p class="titre">"La peinture dans la rue"</p>
-				<p>Du 9 avril au 14 mai 2017</p>
-			</div>
-			<a class="bouton">Voir plus</a>
-			<img src="#" alt="flèche" class="fleche">
+		<section class="caroussel clearfix hidden">
+			<ul class="rslides" id="slider">
+	        	<li>
+	          		<img src="img-content/carousel01.jpg" alt="">
+	          		<p class="bandeau"><span class="uppertitle">[Exposition] "Le tag dans tous ses états"</span>
+	          		<br>Du 9 avril au 17 mai 2017</p>
+	        	</li>
+	        	<li>
+		          <img src="img-content/carousel02.jpg" alt="">
+		          <p class="bandeau"><span class="uppertitle">[Exposition] "Faire du quotidien un art"</span>
+		          <br>Du 20 mai au 10 juin 2017</p>
+		        </li>
+		        <li>
+		          <img src="img-content/carousel03.jpg" alt="">
+		          <p class="bandeau"><span class="uppertitle">[Cocktail/Rencontre] Michel Feutre</span>
+		          <br>Le 13 juillet à 19h</p>
+		        </li>
+	        </ul>
+	        <a class="bouton" href="exposition.html">Découvrir</a>
+	        <a href="#projecteur"><img src="img-layout/arrowdown.png" class="arrowdown"></a>
 		</section>
+<!-- Fin section carousel -->
+		<section class="header-mobile">
+			<img src="img-content/carousel01.jpg" alt="">
+	         <p><a href="exposition.html"><span class="uppertitle">[Exposition] "Le tag dans tous ses états"</span>
+	          		<br>Du 9 avril au 17 mai 2017</a></p>
+	        </ul>
+	        <a class="bouton" href="exposition.html"><span>Découvrir</a>
+		</section>
+
 		<section class="projecteur inner clearfix">
-			<h2>Projecteur sur</h2>
+			<h2  id="projecteur">Projecteur sur</h2>
 			<div class="col-33">
-				<div class="zoom">
-					<a href="detail.html"><img src="img-content/image-1.png" alt="Nyfa Tierpour"></a>
-				</div>
+				<a href="detail.html"><img src="img-content/image-1.png" alt="Nyfa Tierpour"></a>
 				<h3 class="cartel"><a href="detail.html">Nyfa Tierpour</a></h3>
 			</div>
 			<div class="col-33">
-				<div class="zoom">
-					<a href="detail.html"><img src="img-content/image-2.png" alt="Liju Nesman"></a>
-				</div>
+				<a href="detail.html"><img src="img-content/image-2.png" alt="Liju Nesman"></a>
 				<h3 class="cartel"><a href="detail.html">Liju Nesman</a></h3>
 			</div>
 			<div class="col-33">
-				<div class="zoom">
-					<a href="detail.html"><img src="img-content/image-3.png" alt="Mysa Yaya"></a>
-				</div>
+				<a href="detail.html"><img src="img-content/image-3.png" alt="Mysa Yaya"></a>
 				<h3 class="cartel"><a href="detail.html">Mysa Yaya</a></h3>
 			</div>
 		</section>
 <footer class="clearfix">
-		<a data-scroll="#up" href="#up"><img src="img-layout/arrowup.png" id="up"></a>
+		<a href="#"><img src="img-layout/arrowup.png" id="up"></a>
 		<div class="plan">
 			<ul>
 				<li><a href="#">Plan de site</a></li>
@@ -138,5 +171,5 @@
 	</footer>
 </body>
 <script src="js/smooth-scroll.js"></script>
-<script src="js/script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </html>

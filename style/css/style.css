@@ -59,8 +59,8 @@ table {
 .clearfix:after {
   clear: both; }
 
-/* -- Déclaration des variables -- */
-/* -- Classes communes à toutes les pages -- */
+/* -- D├®claration des variables -- */
+/* -- Classes communes ├á toutes les pages -- */
 .bandeau {
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
@@ -83,9 +83,9 @@ table {
       float: none; } }
 
 .col-33 {
-  width: 30.5%;
+  width: 32%;
   float: left;
-  margin: 1%; }
+  margin: 0.6%; }
   @media only screen and (max-width: 800px) {
     .col-33 {
       width: 100%;
@@ -94,8 +94,7 @@ table {
 
 .cartel {
   border: 1px solid #000;
-  padding: 5px;
-  transition: 1s; }
+  padding: 5px; }
 
 .paragraphe {
   text-align: justify; }
@@ -105,6 +104,11 @@ table {
 
 .cache {
   display: none; }
+
+.uppertitle {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Raleway"; }
 
 .zoom {
   overflow: hidden; }
@@ -156,7 +160,32 @@ header {
   header ul li {
     text-transform: uppercase;
     float: right;
-    margin: 4% 4% 0 0; }
+    margin: 4% 4% 0 0;
+    position: relative; }
+    header ul li#artiste:hover div#hover-artiste {
+      width: 79px; }
+    header ul li#expo:hover div#hover-expo {
+      width: 111px; }
+    header ul li#apropos:hover div#hover-apropos {
+      width: 85px; }
+    header ul li div {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      height: 7px;
+      border-radius: 100px; }
+      header ul li div#hover-artiste {
+        background: blue;
+        width: 0;
+        transition: 0.3s; }
+      header ul li div#hover-expo {
+        background: red;
+        width: 0;
+        transition: 0.3s; }
+      header ul li div#hover-apropos {
+        background: yellow;
+        width: 0;
+        transition: 0.3s; }
   header .search {
     margin-top: 2%; }
   header .burger {
@@ -181,7 +210,7 @@ header {
     header .search {
       margin: 5% 0 0 12%; } }
 
-/*menu pour le responsive qui s'affiche au clic sur l'icône burger, sous le header */
+/*menu pour le responsive qui s'affiche au clic sur l'ic├┤ne burger, sous le header */
 .menu {
   font-family: "Raleway";
   text-transform: uppercase;
@@ -243,7 +272,7 @@ header {
       left: 17%;
       width: 70%; } }
 
-/*navigation des artistes par catégorie d'art, seulement en Desktop*/
+/*navigation des artistes par cat├®gorie d'art, seulement en Desktop*/
 .hover-artistes {
   font-family: "Raleway";
   z-index: 100;
@@ -302,7 +331,11 @@ footer {
     position: absolute;
     top: -60px;
     right: 50px; }
+    footer img#up:hover {
+      background: rgba(0, 0, 0, 0.1);
+      transition: 0.5s; }
   footer a {
+    text-decoration: none;
     color: #fff; }
   footer div {
     padding-top: 50px;
@@ -352,118 +385,116 @@ footer {
       line-height: auto;
       font-size: 20px; }
 
-/* ------- ACCUEIL ------ */
-section.projecteur {
-  margin-bottom: 100px; }
-  @media only screen and (max-width: 800px) {
-    section.projecteur div {
-      margin-bottom: 50px; } }
-  section.projecteur img {
-    width: 100%;
-    height: auto; }
-  section.projecteur h3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Open Sans";
-    font-size: 17px;
-    margin-top: 10px; }
-    section.projecteur h3 a {
-      text-decoration: none;
-      color: #000; }
+/*! http://responsiveslides.com v1.55 by @viljamis */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
 
-/* -------- EXPOSITIONS ------- */
-section.expo-actuelle {
-  text-align: justify; }
-  section.expo-actuelle img {
-    display: block;
-    width: 100%; }
-  section.expo-actuelle p {
-    font-size: 17px;
-    font-family: "Open Sans";
-    line-height: 30px; }
-    @media only screen and (max-width: 449px) {
-      section.expo-actuelle p {
-        font-size: 14px; } }
-    section.expo-actuelle p.titre {
-      margin-top: 25px;
-      text-align: center;
-      font-family: "Raleway";
-      font-size: 20px; }
-      @media only screen and (max-width: 449px) {
-        section.expo-actuelle p.titre {
-          font-size: 14px; } }
-    section.expo-actuelle p.date-expo {
-      font-style: italic;
-      text-align: center;
-      margin-bottom: 25px; }
-      @media only screen and (max-width: 449px) {
-        section.expo-actuelle p.date-expo {
-          font-size: 14px; } }
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0; }
 
-section.expo-a-venir {
-  margin: 50px auto; }
-  section.expo-a-venir div {
-    margin: 0 1%;
-    font-family: "Open Sans"; }
-    section.expo-a-venir div figure {
-      position: relative; }
-      @media only screen and (min-width: 450px) and (max-width: 800px) {
-        section.expo-a-venir div figure {
-          margin-top: 50px; } }
-      @media only screen and (max-width: 449px) {
-        section.expo-a-venir div figure {
-          margin-top: 50px; } }
-    section.expo-a-venir div div.bandeau {
-      bottom: 1px;
-      left: 0;
-      z-index: 999;
-      padding: 10px;
-      width: 100%;
-      margin: 0; }
-    section.expo-a-venir div img {
-      width: 100%; }
-    section.expo-a-venir div div.cartel {
-      margin: 10px 0;
-      font-style: italic;
-      padding-left: 10px; }
-      @media only screen and (max-width: 449px) {
-        section.expo-a-venir div div.cartel {
-          font-size: 14px; } }
-    section.expo-a-venir div p {
-      font-size: 17px;
-      line-height: 30px; }
-      @media only screen and (max-width: 449px) {
-        section.expo-a-venir div p {
-          font-size: 14px; } }
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left; }
 
-section.calendrier {
-  margin: 50px auto 100px;
-  font-family: "Open Sans";
-  font-size: 17px; }
-  section.calendrier div.agenda {
-    margin-top: 30px;
-    padding: 5px;
-    border: 1px solid #000;
-    display: table; }
-    @media only screen and (min-width: 450px) and (max-width: 800px) {
-      section.calendrier div.agenda {
-        width: 48%;
-        margin-left: 0; } }
-    @media only screen and (max-width: 449px) {
-      section.calendrier div.agenda {
-        width: 100%; } }
-    section.calendrier div.agenda p {
-      padding-left: 10px; }
-    section.calendrier div.agenda date {
-      font-family: "Raleway";
-      display: table-cell;
-      border-right: 1px solid #000;
-      padding: 5px;
-      width: 20%;
-      text-align: center; }
-      section.calendrier div.agenda date span {
-        font-size: 36px;
-        display: block; }
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0; }
+
+#wrapper {
+  float: left;
+  width: 100%;
+  margin-bottom: 50px; }
+
+.rslides {
+  margin: 0 auto; }
+
+section.caroussel {
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%; }
+
+.centered-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: transparent;
+  top: 50%;
+  left: 0;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("../../img-layout/themes.gif") no-repeat left top;
+  margin-top: -45px; }
+
+.centered-btns_nav:active {
+  opacity: 1.0; }
+
+.centered-btns_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0; }
+
+.centered-btns_nav:focus,
+.transparent-btns_nav:focus,
+.large-btns_nav:focus {
+  outline: none; }
+
+.centered-btns_tabs,
+.transparent-btns_tabs,
+.large-btns_tabs {
+  margin-top: 10px;
+  text-align: center; }
+
+.centered-btns_tabs li,
+.transparent-btns_tabs li,
+.large-btns_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  margin-right: 5px; }
+
+.centered-btns_tabs a,
+.transparent-btns_tabs a,
+.large-btns_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #ccc;
+  background: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  _display: block;
+  *display: block;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  width: 9px;
+  height: 9px; }
+
+.centered-btns_here a,
+.transparent-btns_here a,
+.large-btns_here a {
+  background: #222;
+  background: rgba(0, 0, 0, 0.8); }
 
 /* -------- LISTE ARTISTES ------- */
 /*pour le responsive, les images s'empilent */
@@ -518,7 +549,7 @@ section.artistes {
       width: 100%;
       padding: 2%; } }
 
-/* -------- DÉTAIL ARTISTES ------- */
+/* -------- D├ëTAIL ARTISTES ------- */
 section.description {
   position: relative; }
   section.description h2,
@@ -558,7 +589,7 @@ section.detail-images {
     padding: 2%;
     margin-bottom: 2%; }
 
-/* -------- À PROPOS ------- */
+/* -------- ├Ç PROPOS ------- */
 /*pour le responsive le bandeau de l'image se place en dessous d'elle*/
 section.horaires {
   position: relative; }
@@ -651,5 +682,216 @@ section.images-galerie {
     @media only screen and (max-width: 800px) {
       section.images-galerie img {
         height: auto; } }
+
+/******************************************
+*** Carousel 
+*******************************************/
+@media only screen and (max-width: 449px) {
+  section.caroussel.hidden {
+    display: none; } }
+section.caroussel p {
+  font-size: 17px;
+  font-family: "Open Sans";
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  line-height: 30px; }
+  @media only screen and (max-width: 449px) {
+    section.caroussel p {
+      font-size: 14px; } }
+section.caroussel a.bouton {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Raleway";
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  z-index: 999; }
+  section.caroussel a.bouton:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s; }
+  @media only screen and (max-width: 800px) {
+    section.caroussel a.bouton {
+      bottom: 20px; } }
+section.caroussel img.arrowdown {
+  width: 73px;
+  position: absolute;
+  bottom: -60px;
+  z-index: 2;
+  left: 50%;
+  margin-left: -50px; }
+  section.caroussel img.arrowdown:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transition: 0.5s; }
+  @media only screen and (max-width: 449px) {
+    section.caroussel img.arrowdown {
+      left: 36%; } }
+
+section.header-mobile {
+  text-align: center; }
+  @media only screen and (min-width: 450px) {
+    section.header-mobile {
+      display: none; } }
+  section.header-mobile img {
+    width: 100%; }
+  section.header-mobile p {
+    background: #333;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left; }
+    section.header-mobile p a {
+      color: #fff;
+      font-size: 14px;
+      font-family: "Open Sans";
+      line-height: 20px;
+      text-decoration: none; }
+      section.header-mobile p a span {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: "Raleway"; }
+  @media only screen and (max-width: 449px) {
+    section.header-mobile a.bouton {
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #333;
+      font-size: 14px;
+      font-family: "Raleway";
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: 1px solid #333; } }
+
+/*****************************************
+***** Projecteur
+*****************************************/
+section.projecteur {
+  position: relative;
+  top: 100px; }
+  @media only screen and (max-width: 449px) {
+    section.projecteur {
+      position: static;
+      margin-top: 25px;
+      margin-bottom: 50px; } }
+  section.projecteur div {
+    margin-bottom: 150px; }
+    @media only screen and (max-width: 449px) {
+      section.projecteur div {
+        margin-bottom: 50px; } }
+  section.projecteur img {
+    width: 100%;
+    height: auto; }
+  section.projecteur h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-size: 17px;
+    margin-top: 10px; }
+    section.projecteur h3 a {
+      text-decoration: none;
+      color: #000; }
+
+/*********************************
+****** Expositions
+*********************************/
+section.expo-actuelle {
+  text-align: justify; }
+  section.expo-actuelle img {
+    display: block;
+    width: 100%; }
+  section.expo-actuelle p {
+    font-size: 17px;
+    font-family: "Open Sans";
+    line-height: 30px; }
+    @media only screen and (max-width: 449px) {
+      section.expo-actuelle p {
+        font-size: 14px; } }
+    section.expo-actuelle p.titre {
+      margin-top: 25px;
+      text-align: center;
+      font-family: "Raleway";
+      font-size: 20px; }
+      @media only screen and (max-width: 449px) {
+        section.expo-actuelle p.titre {
+          font-size: 14px; } }
+    section.expo-actuelle p.date-expo {
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 25px; }
+      @media only screen and (max-width: 449px) {
+        section.expo-actuelle p.date-expo {
+          font-size: 14px; } }
+
+section.expo-a-venir {
+  margin: 50px auto; }
+  section.expo-a-venir div {
+    margin: 0 1%;
+    font-family: "Open Sans"; }
+    section.expo-a-venir div figure {
+      position: relative; }
+      @media only screen and (min-width: 450px) and (max-width: 800px) {
+        section.expo-a-venir div figure {
+          margin-top: 50px; } }
+      @media only screen and (max-width: 449px) {
+        section.expo-a-venir div figure {
+          margin-top: 50px; } }
+    section.expo-a-venir div div.bandeau {
+      bottom: 1px;
+      left: 0;
+      z-index: 999;
+      padding: 10px;
+      width: 100%;
+      margin: 0; }
+    section.expo-a-venir div img {
+      width: 100%; }
+    section.expo-a-venir div div.cartel {
+      margin: 10px 0;
+      font-style: italic;
+      padding-left: 10px; }
+      @media only screen and (max-width: 449px) {
+        section.expo-a-venir div div.cartel {
+          font-size: 14px; } }
+    section.expo-a-venir div p {
+      font-size: 17px;
+      line-height: 30px; }
+      @media only screen and (max-width: 449px) {
+        section.expo-a-venir div p {
+          font-size: 14px; } }
+
+section.calendrier {
+  margin: 50px auto 100px;
+  font-family: "Open Sans";
+  font-size: 17px; }
+  section.calendrier div.agenda {
+    margin-top: 30px;
+    padding: 5px;
+    border: 1px solid #000;
+    display: table; }
+    @media only screen and (min-width: 450px) and (max-width: 800px) {
+      section.calendrier div.agenda {
+        width: 48%;
+        margin-left: 0; } }
+    @media only screen and (max-width: 449px) {
+      section.calendrier div.agenda {
+        width: 100%; } }
+    section.calendrier div.agenda p {
+      padding-left: 10px; }
+    section.calendrier div.agenda date {
+      font-family: "Raleway";
+      display: table-cell;
+      border-right: 1px solid #000;
+      padding: 5px;
+      width: 20%;
+      text-align: center; }
+      section.calendrier div.agenda date span {
+        font-size: 36px;
+        display: block; }
 
 /*# sourceMappingURL=style.css.map */
