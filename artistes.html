@@ -1,194 +1,214 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:400,400i,700" rel="stylesheet">
-	<title>Wallery</title>
-	<link rel="stylesheet" href="style/css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:400,400i,700" rel="stylesheet">
+    <title>Wallery</title>
+    <link rel="stylesheet" href="style/css/style.css">
 </head>
+
 <body>
-	<header class="clearfix" id="up">
-		<div class="inner clearfix">
-			<h1><a href="index.html"><img src="img-layout/logoblanc.svg" alt="wallery" class="logo"></a></h1>
-			<nav class="clearfix">
-				<ul>
-					<li class="search"><a href="#"><img src="img-layout/loupe.svg" alt="icône de recherche"></a></li>
-					<li class="burger"><a href="#"><img src="img-layout/burger.svg" alt="icône de menu responsive"></a></li>
-					<li><a href="apropos.html">À propos</a>
-					<div id="hover-apropos"></div></li>
-					<li><a href="exposition.html">Expositions</a>
-					<div id="hover-expo"></div></li>
-					<li class="artistes-nav"><a href="artistes.html">Artistes</a>
-					<div id="hover-artiste"></div></li>
-				</ul>
-			</nav>			
-		</div>
-	</header>
+    <header class="clearfix" id="top">
+        <div class="inner clearfix">
+            <h1><a href="index.html"><img src="img-layout/logoblanc.svg" alt="wallery" class="logo"></a></h1>
+            <nav class="clearfix">
+                <ul>
+                    <li class="search">
+                        <a href="#"><img src="img-layout/loupe.svg" alt="icône de recherche"></a>
+                    </li>
+                    <li class="burger">
+                        <a href="#"><img src="img-layout/burger.svg" alt="icône de menu responsive"></a>
+                    </li>
+                    <li><a href="apropos.html">À propos</a>
+                        <div id="hover-apropos"></div>
+                    </li>
+                    <li><a href="exposition.html">Expositions</a>
+                        <div id="hover-expo"></div>
+                    </li>
+                    <li class="artistes-nav"><a href="artistes.html">Artistes</a>
+                        <div id="hover-artiste"></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-	<div class="menu cache">
-		<a href="#" class="annuler"><img src="img-layout/cancel.png" alt="icône annulation"></a>
-		<ul>
-			<li><a href="artistes.html">Artistes</a></li>
-			<li><a href="exposition.html">Expositions</a></li>
-			<li><a href="apropos.html">À propos</a></li>
-		</ul>
-	</div>
+    <div class="menu cache">
+        <a href="#" class="annuler"><img src="img-layout/cancel.png" alt="icône annulation"></a>
+        <ul>
+            <li><a href="artistes.html">Artistes</a></li>
+            <li><a href="exposition.html">Expositions</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+        </ul>
+    </div>
 
-	<div class="recherche cache">
-		<label>Entrez votre recherche</label>
-		<br><input type='textarea'>
-		<br><a href="#" class="cartel">Envoyer</a>
-		<a href="#" class="cartel boutonAnnule">Annuler</a>
-	</div>
+    <div class="recherche cache">
+        <label>Entrez votre recherche</label>
+        <input type='text'>
+        <a href="#" class="cartel">Envoyer</a>
+        <a href="#" class="cartel boutonAnnule">Annuler</a>
+    </div>
 
-	<div class="hover-artistes cache">
-		<ul>
-			<li><a href="artistes.html">Peintures</a></li>
-			<li><a href="artistes.html">Collages</a></li>
-			<li><a href="artistes.html">Graffitis</a></li>
-			<li><a href="artistes.html">Marqueurs</a></li>
-		</ul>
+      <div class="hover-artistes cache">
+        <ul>
+            <li><a href="artistes.html">Peintures</a></li>
+            <li><a href="artistes.html">Collages</a></li>
+            <li><a href="artistes.html">Graffitis</a></li>
+            <li><a href="artistes.html">Marqueurs</a></li>
+        </ul>
 
-		<div class="hover-images">
-			<div class="peintures-images">
-				<a href="detail.html"><img src="img-content/image-2.png"></a>
-				<p class='left'>Rimka</p>
-				<a href="artistes.html"><img src="img-content/image-3.png"></a>
-				<p class="right">Liju Nesman</p>
-				
-			</div>
-			<div class="collages-images cache">
-				<a href="detail.html"><img src="img-content/image-8.png"></a>
-				<p class="left">Tranoï</p>
-				<a href="artistes.html"><img src="img-content/image-9.png"></a>
-				<p class="right">Dargo Marie-Jean</p>
-			</div>
-			<div class="graffiti-images cache">
-				<a href="detail.html"><img src="img-content/image-1.png"></a>
-				<p class="left">Jacques Rousseau</p>
-				<a href="detail.html"><img src="img-content/image-5.png"></a>
-				<p class="right">Deklein</p>		
-			</div>
-			<div class="marqueur-images cache">
-				<a href="detail.html"><img src="img-content/image-4.png"></a>
-				<p class="left">Nyfa Tierpour</p>	
-				<a href="detail.html"><img src="img-content/image-7.png"></a>
-				<p class="right">Ferlitard</p>	
-			</div>
-		</div>
-	</div>
+        <div class="hover-images">
+            <div class="peintures-images">
+                <a href="detail.html"><img src="img-content/image-2.png" alt="image de l'artiste"></a>
+                <p class='left'>Rimka</p>
+                <a href="artistes.html"><img src="img-content/image-3.png" alt="image de l'artiste"></a>
+                <p class="right">Liju Nesman</p>
 
-	<section class="inner filtres clearfix">
-		<h2>Artistes</h2>
-		<div class="filtres-contenu">
-			<ul>
-				<li class="tab-1 cartel "><a href="#">Voir tout</a></li>
-				<li class="tab-2 cartel"><a href="#">Peintures</a></li>
-				<li class="tab-3 cartel"><a href="#">Collages</a></li>
-				<li class="tab-4 cartel"><a href="#">Graffitis</a></li>
-				<li class="tab-5 cartel"><a href="#">Marqueurs</a></li>
-			</ul>
-		</div>
-	</section>
-	<section class="artistes inner clearfix">
-		<div class="col-33 graffiti">
-			<div class="zoom">
-				<a href="detail.html"><img src="img-content/image-1.png" alt="Jacques-Jean Rousseau"></a>
-			</div>
-			<h3 class="cartel"><a href="detail.html">Jacques Rousseau</a></h3>
-		</div>
+            </div>
+            <div class="collages-images cache">
+                <a href="detail.html"><img src="img-content/image-8.png" alt="image de l'artiste"></a>
+                <p class="left">Tranoï</p>
+                <a href="artistes.html"><img src="img-content/image-9.png" alt="image de l'artiste"></a>
+                <p class="right">Dargo Marie-Jean</p>
+            </div>
+            <div class="graffiti-images cache">
+                <a href="detail.html"><img src="img-content/image-1.png" alt="image de l'artiste"></a>
+                <p class="left">Jacques Rousseau</p>
+                <a href="detail.html"><img src="img-content/image-5.png" alt="image de l'artiste"></a>
+                <p class="right">Deklein</p>
+            </div>
+            <div class="marqueur-images cache">
+                <a href="detail.html"><img src="img-content/image-4.png" alt="image de l'artiste"></a>
+                <p class="left">Nyfa Tierpour</p>
+                <a href="detail.html"><img src="img-content/image-7.png" alt="image de l'artiste"></a>
+                <p class="right">Ferlitard</p>
+            </div>
+        </div>
+    </div>
 
-			<div class="col-33 peinture">
-				<div class="zoom">
-				<a href="detail.html"><img src="img-content/image-2.png" alt="Rimka"></a>
-				</div>	
-				<h3 class="cartel"><a href="detail.html">Rimka</a></h3>
-		</div>
+    <section class="inner filtres clearfix">
+        <h2>Artistes</h2>
+        <div class="filtres-contenu">
+            <ul>
+                <li class="tab-1 cartel "><a href="#">Voir tout</a></li>
+                <li class="tab-2 cartel"><a href="#">Peintures</a></li>
+                <li class="tab-3 cartel"><a href="#">Collages</a></li>
+                <li class="tab-4 cartel"><a href="#">Graffitis</a></li>
+                <li class="tab-5 cartel"><a href="#">Marqueurs</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="artistes inner clearfix">
+        <div class="col-33 graffiti">
+            <div class="zoom">
+                <a href="detail.html"><img src="img-content/image-1.png" alt="Jacques-Jean Rousseau"></a>
+            </div>
+            <h3 class="cartel"><a href="detail.html">Jacques Rousseau</a></h3>
+        </div>
 
-			<div class="col-33 peinture">
-				<div class="zoom">
-				<a href="detail.html"><img src="img-content/image-3.png" alt="Liju Nesman"></a>	
-				</div>
-				<h3 class="cartel"><a href="detail.html">Liju Nesman</a></h3>
-		</div>
+        <div class="col-33 peinture">
+            <div class="zoom">
+                <a href="detail.html"><img src="img-content/image-2.png" alt="Rimka"></a>
+            </div>
+            <h3 class="cartel"><a href="detail.html">Rimka</a></h3>
+        </div>
 
-			<div class="col-33 graffiti">
-				<div class="zoom">
-					<a href="detail.html"><img src="img-content/image-4.png" alt="Nyfa Tierpour"></a>	
-				</div>
-				<h3 class="cartel"><a href="detail.html">Nyfa Tierpour</a></h3>
-		</div>
+        <div class="col-33 peinture">
+            <div class="zoom">
+                <a href="detail.html"><img src="img-content/image-3.png" alt="Liju Nesman"></a>
+            </div>
+            <h3 class="cartel"><a href="detail.html">Liju Nesman</a></h3>
+        </div>
 
-			<div class="col-33 peinture">
-				<div class="zoom">
-					<a href="detail.html"><img src="img-content/image-5.png" alt="Florian Deklein"></a>
-				</div>	
-				<h3 class="cartel"><a href="detail.html">Florian Deklein</a></h3>
-		</div>
+        <div class="col-33 graffiti">
+            <div class="zoom">
+                <a href="detail.html"><img src="img-content/image-4.png" alt="Nyfa Tierpour"></a>
+            </div>
+            <h3 class="cartel"><a href="detail.html">Nyfa Tierpour</a></h3>
+        </div>
 
-			<div class="col-33 peinture">
-				<div class="zoom">
-					<a href="detail.html"><img src="img-content/image-6.png" alt="Mysa Yaya"></a>
-				</div>	
-				<h3 class="cartel"><a href="detail.html">Mysa Yaya</a></h3>
-		</div>
+        <div class="col-33 peinture">
+            <div class="zoom">
+                <a href="detail.html"><img src="img-content/image-5.png" alt="Florian Deklein"></a>
+            </div>
+            <h3 class="cartel"><a href="detail.html">Florian Deklein</a></h3>
+        </div>
 
-			<div class="col-33 marqueur">
-				<div class="zoom">
-					<a href="detail.html"><img src="img-content/image-7.png" alt="Ferlitard"></a>	
-				</div>
-				<h3 class="cartel"><a href="detail.html">Ferlitard</a></h3>
-		</div>
+        <div class="col-33 peinture">
+            <div class="zoom">
+                <a href="detail.html"><img src="img-content/image-6.png" alt="Mysa Yaya"></a>
+            </div>
+            <h3 class="cartel"><a href="detail.html">Mysa Yaya</a></h3>
+        </div>
 
-			<div class="col-33 collage">
-				<div class="zoom">
-					<a href="detail.html"><img src="img-content/image-8.png" alt="Tranoï"></a>
-				</div>
-				<h3 class="cartel"><a href="detail.html">Tranoï</a></h3>
-		</div>
+        <div class="col-33 marqueur">
+            <div class="zoom">
+                <a href="detail.html"><img src="img-content/image-7.png" alt="Ferlitard"></a>
+            </div>
+            <h3 class="cartel"><a href="detail.html">Ferlitard</a></h3>
+        </div>
 
-			<div class="col-33 collage">
-				<div class="zoom">
-					<a href="detail.html"><img src="img-content/image-9.png" alt="Dargo Marie-Jean"></a>
-				</div>
-				<h3 class="cartel"><a href="detail.html">Dargo Marie-Jean</a></h3>	
-			</div>
-	</section>
+        <div class="col-33 collage">
+            <div class="zoom">
+                <a href="detail.html"><img src="img-content/image-8.png" alt="Tranoï"></a>
+            </div>
+            <h3 class="cartel"><a href="detail.html">Tranoï</a></h3>
+        </div>
 
-<footer class="clearfix">
-		<a data-scroll="#up" href="#up"><img src="img-layout/arrowup.png" id="up"></a>
-		<div class="plan">
-			<ul>
-				<li><a href="#">Plan de site</a></li>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="artistes.html">Artistes</a></li>
-				<li><a href="exposition.html">Expositions</a></li>
-				<li><a href="apropos.html">A propos</a></li>
-				<li><a href="mailto:contact@wallery.fr">Contact</a></li>
-			</ul>
-		</div>
-		<div class="clearfix">
-			<img src="img-layout/logoblanc.svg" alt="logo">
-			<p>52, rue de la Roquette
-			<br/>75 011 Paris</p>
-			<p>06 23 45 67 89 - 01 23 45 67 89</p>
-			<p class="horaires">Mardi au Samedi :
-			<br/>10h - 13h et 15h - 20h</p>
-			<p class="horaires">Dimanche :
-			<br/>10h - 13h</p>
-		</div>
-		<div class="social">
-			<ul>
-				<li><a href="#"><img src="img-layout/social/facebook.svg" alt="facebook"></a></li>
-				<li><a href="#"><img src="img-layout/social/instagram.svg" alt="instagram"></a></li>
-				<li><a href="#"><img src="img-layout/social/pinterest.svg" alt="pinterest"></a></li>
-				<li><a href="#"><img src="img-layout/social/gplus.svg" alt="gplus"></a></li>
-			</ul>
-		</div>
-	</footer>
+        <div class="col-33 collage">
+            <div class="zoom">
+                <a href="detail.html"><img src="img-content/image-9.png" alt="Dargo Marie-Jean"></a>
+            </div>
+            <h3 class="cartel"><a href="detail.html">Dargo Marie-Jean</a></h3>
+        </div>
+    </section>
+
+    <footer class="clearfix">
+        <a data-scroll="#top" href="#"><img src="img-layout/arrowup.png" id="up" alt="icône flèche"></a>
+        <div class="plan">
+            <ul>
+                <li><a href="#">Plan de site</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="artistes.html">Artistes</a></li>
+                <li><a href="exposition.html">Expositions</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="mailto:contact@wallery.fr">Contact</a></li>
+            </ul>
+        </div>
+        <div class="clearfix">
+            <img src="img-layout/logoblanc.svg" alt="logo">
+            <p>52, rue de la Roquette
+                <br/>75 011 Paris</p>
+            <p>06 23 45 67 89 - 01 23 45 67 89</p>
+            <p class="horaires">Mardi au Samedi :
+                <br/>10h - 13h et 15h - 20h</p>
+            <p class="horaires">Dimanche :
+                <br/>10h - 13h</p>
+        </div>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="#"><img src="img-layout/social/facebook.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/social/instagram.svg" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/social/pinterest.svg" alt="pinterest"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/social/gplus.svg" alt="gplus"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
-<script src="js/smooth-scroll.js"></script>
-<script src="js/script.js"></script>
+ <script src="js/smooth-scroll.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/responsiveslides.js"></script>
+
 </html>

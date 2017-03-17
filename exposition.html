@@ -1,159 +1,179 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:400,400i,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style/css/style.css">
-	<title>Wallery - Expositions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/css/style.css">
+    <title>Wallery - Expositions</title>
 </head>
+
 <body>
-		<header class="clearfix" id="up">
-		<div class="inner clearfix">
-			<h1><a href="index.html"><img src="img-layout/logoblanc.svg" alt="wallery" class="logo"></a></h1>
-			<nav class="clearfix">
-				<ul>
-					<li class="search"><a href="#"><img src="img-layout/loupe.svg" alt="icône de recherche"></a></li>
-					<li class="burger"><a href="#"><img src="img-layout/burger.svg" alt="icône de menu responsive"></a></li>
-					<li><a href="apropos.html">À propos</a>
-					<div id="hover-apropos"></div></li>
-					<li><a href="exposition.html">Expositions</a>
-					<div id="hover-expo"></div></li>
-					<li class="artistes-nav"><a href="artistes.html">Artistes</a>
-					<div id="hover-artiste"></div></li>
-				</ul>
-			</nav>			
-		</div>
-	</header>
-	<div class="recherche cache">
-		<label>Entrez votre recherche</label>
-		<br><input type='textarea'>
-		<br><a href="#" class='cartel'>Envoyer</a>
-		<a href="#" class="cartel boutonAnnule">Annuler</a>
-	</div>
+    <header class="clearfix" id="top">
+        <div class="inner clearfix">
+            <h1><a href="index.html"><img src="img-layout/logoblanc.svg" alt="wallery" class="logo"></a></h1>
+            <nav class="clearfix">
+                <ul>
+                    <li class="search">
+                        <a href="#"><img src="img-layout/loupe.svg" alt="icône de recherche"></a>
+                    </li>
+                    <li class="burger">
+                        <a href="#"><img src="img-layout/burger.svg" alt="icône de menu responsive"></a>
+                    </li>
+                    <li><a href="apropos.html">À propos</a>
+                        <div id="hover-apropos"></div>
+                    </li>
+                    <li><a href="exposition.html">Expositions</a>
+                        <div id="hover-expo"></div>
+                    </li>
+                    <li class="artistes-nav"><a href="artistes.html">Artistes</a>
+                        <div id="hover-artiste"></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="recherche cache">
+        <label>Entrez votre recherche</label>
+        <input type='text'>
+        <a href="#" class='cartel'>Envoyer</a>
+        <a href="#" class="cartel boutonAnnule">Annuler</a>
+    </div>
 
-	<div class="menu cache">
-		<a href="#" class="annuler"><img src="img-layout/cancel.png" alt="icône annulation"></a>
-			<ul>
-				<li><a href="artistes.html">Artistes</a></li>
-				<li><a href="exposition.html">Expositions</a></li>
-				<li><a href="apropos.html">À propos</a></li>
-			</ul>
-	</div>
+    <div class="menu cache">
+        <a href="#" class="annuler"><img src="img-layout/cancel.png" alt="icône annulation"></a>
+        <ul>
+            <li><a href="artistes.html">Artistes</a></li>
+            <li><a href="exposition.html">Expositions</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+        </ul>
+    </div>
 
-	<div class="hover-artistes cache">
-		<ul>
-			<li><a href="artistes.html">Peintures</a></li>
-			<li><a href="artistes.html">Collages</a></li>
-			<li><a href="artistes.html">Graffitis</a></li>
-			<li><a href="artistes.html">Marqueurs</a></li>
-		</ul>
+    <div class="hover-artistes cache">
+        <ul>
+            <li><a href="artistes.html">Peintures</a></li>
+            <li><a href="artistes.html">Collages</a></li>
+            <li><a href="artistes.html">Graffitis</a></li>
+            <li><a href="artistes.html">Marqueurs</a></li>
+        </ul>
 
-		<div class="hover-images">
-			<div class="peintures-images">
-				<a href="detail.html"><img src="img-content/image-2.png"></a>
-				<p class='left'>Rimka</p>
-				<a href="artistes.html"><img src="img-content/image-3.png"></a>
-				<p class="right">Liju Nesman</p>
-				
-			</div>
-			<div class="collages-images cache">
-				<a href="detail.html"><img src="img-content/image-8.png"></a>
-				<p class="left">Tranoï</p>
-				<a href="artistes.html"><img src="img-content/image-9.png"></a>
-				<p class="right">Dargo Marie-Jean</p>
-			</div>
-			<div class="graffiti-images cache">
-				<a href="detail.html"><img src="img-content/image-1.png"></a>
-				<p class="left">Jacques Rousseau</p>
-				<a href="detail.html"><img src="img-content/image-5.png"></a>
-				<p class="right">Deklein</p>		
-			</div>
-			<div class="marqueur-images cache">
-				<a href="detail.html"><img src="img-content/image-4.png"></a>
-				<p class="left">Nyfa Tierpour</p>	
-				<a href="detail.html"><img src="img-content/image-7.png"></a>
-				<p class="right">Ferlitard</p>	
-			</div>
-		</div>
-	</div>
-	<section class="expo-actuelle inner">
-		<h2>Exposition du moment</h2>
-		<img src="img-content/expoactuelle.png" alt="exposition" class="inner">
-		<p class="titre">[Exposition] "Le tag dans tous ses états"</p>
-		<p class="date-expo">Du 12 février au 2 avril 2017</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, qui, nesciunt? Quisquam molestias doloribus id, temporibus tempore libero animi officia, est dicta esse, expedita beatae dolores quis eos alias. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore beatae maxime nemo non totam incidunt ipsum repellendus omnis distinctio atque ipsa magni et consequuntur mollitia officiis, similique pariatur! Optio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error hic, non eius provident consectetur, vel amet at quam officia. Molestiae vitae temporibus nulla assumenda adipisci aperiam quas inventore, quia voluptatum?</p>
-	</section>
-	<section class="expo-a-venir inner clearfix">
-		<h2>Prochains événements</h2>
-		<div class="col-50">
-			<figure>
-				<img src="img-content/expo01.png" alt="exposition">
-				<div class="bandeau">
-					<p class="titre">[Exposition] "Faire du quotidien un art"</p>
-				</div>
-			</figure>			
-			<div class="cartel">Du 15 mai au 10 juin 2017</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, quasi obcaecati voluptas neque sed labore tempora, explicabo temporibus. Sed impedit aut voluptatibus doloremque illo ut iusto, commodi, quo nihil molestias!</p>
-		</div>
-		<div class="col-50">
-			<figure>
-				<img src="img-content/expo02.png" alt="exposition">
-				<div class="bandeau">
-					<p class="titre">[Cocktail/Rencontre] Michel Feutre</p>
-				</div>
-			</figure>
-			<div class="cartel">Le 13 juillet 2017 à 19h</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi consequatur aut laborum accusantium maiores sit dolorum. Fugit sed reiciendis, facere ut consequuntur harum saepe maiores minima distinctio reprehenderit aliquam esse.</p>
-		</div>
-	</section>
-	<section class="calendrier inner clearfix">
-		<p class="titre">Mais aussi ... </p>
-		<div class="agenda col-33">
-			<date><span class="jour">24</span> août</date>
-			<p>Inauguration de l'espace en plein air.</p>
-		</div>
-		<div class="agenda col-33">
-			<date><span class="jour">02</span> octobre</date>
-			<p>[Exposition] "La mosaïque, un support moderne."</p>
-		</div>
-		<div class="agenda col-33">
-			<date><span class="jour">2018</span></date>
-			<p>... de l'art, des rencontres et de beaux rendez-vous.</p>
-		</div>		
-	</section>
-<footer class="clearfix">
-		<a href="#"><img src="img-layout/arrowup.png" id="up"></a>
-		<div class="plan">
-			<ul>
-				<li><a href="#">Plan de site</a></li>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="artistes.html">Artistes</a></li>
-				<li><a href="exposition.html">Expositions</a></li>
-				<li><a href="apropos.html">A propos</a></li>
-				<li><a href="mailto:contact@wallery.fr">Contact</a></li>
-			</ul>
-		</div>
-		<div class="clearfix">
-			<img src="img-layout/logoblanc.svg" alt="logo">
-			<p>52, rue de la Roquette
-			<br/>75 011 Paris</p>
-			<p>06 23 45 67 89 - 01 23 45 67 89</p>
-			<p class="horaires">Mardi au Samedi :
-			<br/>10h - 13h et 15h - 20h</p>
-			<p class="horaires">Dimanche :
-			<br/>10h - 13h</p>
-		</div>
-		<div class="social">
-			<ul>
-				<li><a href="#"><img src="img-layout/social/facebook.svg" alt="facebook"></a></li>
-				<li><a href="#"><img src="img-layout/social/instagram.svg" alt="instagram"></a></li>
-				<li><a href="#"><img src="img-layout/social/pinterest.svg" alt="pinterest"></a></li>
-				<li><a href="#"><img src="img-layout/social/gplus.svg" alt="gplus"></a></li>
-			</ul>
-		</div>
-	</footer>
+        <div class="hover-images">
+            <div class="peintures-images">
+                <a href="detail.html"><img src="img-content/image-2.png" alt="image de l'artiste"></a>
+                <p class='left'>Rimka</p>
+                <a href="artistes.html"><img src="img-content/image-3.png" alt="image de l'artiste"></a>
+                <p class="right">Liju Nesman</p>
+
+            </div>
+            <div class="collages-images cache">
+                <a href="detail.html"><img src="img-content/image-8.png" alt="image de l'artiste"></a>
+                <p class="left">Tranoï</p>
+                <a href="artistes.html"><img src="img-content/image-9.png" alt="image de l'artiste"></a>
+                <p class="right">Dargo Marie-Jean</p>
+            </div>
+            <div class="graffiti-images cache">
+                <a href="detail.html"><img src="img-content/image-1.png" alt="image de l'artiste"></a>
+                <p class="left">Jacques Rousseau</p>
+                <a href="detail.html"><img src="img-content/image-5.png" alt="image de l'artiste"></a>
+                <p class="right">Deklein</p>
+            </div>
+            <div class="marqueur-images cache">
+                <a href="detail.html"><img src="img-content/image-4.png" alt="image de l'artiste"></a>
+                <p class="left">Nyfa Tierpour</p>
+                <a href="detail.html"><img src="img-content/image-7.png" alt="image de l'artiste"></a>
+                <p class="right">Ferlitard</p>
+            </div>
+        </div>
+    </div>
+    <section class="expo-actuelle inner">
+        <h2>Exposition du moment</h2>
+        <img src="img-content/expoactuelle.png" alt="exposition" class="inner">
+        <p class="titre">[Exposition] "Le tag dans tous ses états"</p>
+        <p class="date-expo">Du 12 février au 2 avril 2017</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, qui, nesciunt? Quisquam molestias doloribus id, temporibus tempore libero animi officia, est dicta esse, expedita beatae dolores quis eos alias. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore beatae maxime nemo non totam incidunt ipsum repellendus omnis distinctio atque ipsa magni et consequuntur mollitia officiis, similique pariatur! Optio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error hic, non eius provident consectetur, vel amet at quam officia. Molestiae vitae temporibus nulla assumenda adipisci aperiam quas inventore, quia voluptatum?</p>
+    </section>
+    <section class="expo-a-venir inner clearfix">
+        <h2>Prochains événements</h2>
+        <div class="col-50">
+            <figure>
+                <img src="img-content/expo01.png" alt="exposition">
+                <div class="bandeau">
+                    <p class="titre">[Exposition] "Faire du quotidien un art"</p>
+                </div>
+            </figure>
+            <div class="cartel">Du 15 mai au 10 juin 2017</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, quasi obcaecati voluptas neque sed labore tempora, explicabo temporibus. Sed impedit aut voluptatibus doloremque illo ut iusto, commodi, quo nihil molestias!</p>
+        </div>
+        <div class="col-50">
+            <figure>
+                <img src="img-content/expo02.png" alt="exposition">
+                <div class="bandeau">
+                    <p class="titre">[Cocktail/Rencontre] Michel Feutre</p>
+                </div>
+            </figure>
+            <div class="cartel">Le 13 juillet 2017 à 19h</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi consequatur aut laborum accusantium maiores sit dolorum. Fugit sed reiciendis, facere ut consequuntur harum saepe maiores minima distinctio reprehenderit aliquam esse.</p>
+        </div>
+    </section>
+    <section class="calendrier inner clearfix">
+        <p class="titre">Mais aussi ... </p>
+        <div class="agenda col-33">
+            <p class='date'><span class="jour">24</span> août</p>
+            <p>Inauguration de l'espace en plein air.</p>
+        </div>
+        <div class="agenda col-33">
+            <p class='date'><span class="jour">02</span> octobre</p>
+            <p>[Exposition] "La mosaïque, un support moderne."</p>
+        </div>
+        <div class="agenda col-33">
+            <p class='date'><span class="jour">2018</span></p>
+            <p>... de l'art, des rencontres et de beaux rendez-vous.</p>
+        </div>
+    </section>
+    <footer class="clearfix">
+        <a href="#" data-scroll="top"><img src="img-layout/arrowup.png" id="up" alt="icône flèche"></a>
+        <div class="plan">
+            <ul>
+                <li><a href="#">Plan de site</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="artistes.html">Artistes</a></li>
+                <li><a href="exposition.html">Expositions</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="mailto:contact@wallery.fr">Contact</a></li>
+            </ul>
+        </div>
+        <div class="clearfix">
+            <img src="img-layout/logoblanc.svg" alt="logo">
+            <p>52, rue de la Roquette
+                <br/>75 011 Paris</p>
+            <p>06 23 45 67 89 - 01 23 45 67 89</p>
+            <p class="horaires">Mardi au Samedi :
+                <br/>10h - 13h et 15h - 20h</p>
+            <p class="horaires">Dimanche :
+                <br/>10h - 13h</p>
+        </div>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="#"><img src="img-layout/social/facebook.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/social/instagram.svg" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/social/pinterest.svg" alt="pinterest"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/social/gplus.svg" alt="gplus"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 <script src="js/smooth-scroll.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/responsiveslides.js"></script>
+
 </html>
