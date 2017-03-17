@@ -9,6 +9,7 @@ var rechercheClique = document.querySelector('.search');
 var recherche = document.querySelector('.recherche');
 var annulation = document.querySelector('.annuler');
 var boutonAnnulation = document.querySelector('.boutonAnnule');
+var headerLis = document.querySelectorAll('#top ul li a');
 
 burgerClique.addEventListener('click', function() {
 		menu.classList.toggle('cache');
@@ -20,10 +21,13 @@ annulation.addEventListener('click', function() {
 
 });
 
-
 rechercheClique.addEventListener('click', function() {		
 		recherche.classList.toggle('cache');
-		
+		for (var i = 0; i < headerLis.length; i++) {
+			headerLis[i].classList.toggle('cache');
+			headerLis[0].classList.remove('cache');
+			headerLis[1].classList.remove('cache');			
+		}
 });
 
 
