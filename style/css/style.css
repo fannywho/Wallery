@@ -573,9 +573,17 @@ section.artistes {
     section.artistes div.col-33 {
       width: 50%;
       padding: 2%;
-      float: left; }
+      float: left; } }
+  @media only screen and (max-width: 800px) and (max-width: 449px) {
+    section.artistes div.col-33 {
+      float: none; } }
+  @media only screen and (max-width: 800px) {
       section.artistes div.col-33:last-child {
         margin-left: 25%; } }
+    @media only screen and (max-width: 800px) and (max-width: 449px) {
+      section.artistes div.col-33:last-child {
+        margin: 0 0 20px 0; } }
+
   @media only screen and (max-width: 449px) {
     section.artistes div.col-33 {
       width: 100%;

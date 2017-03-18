@@ -75,8 +75,16 @@ section.artistes {
             padding: 2%;
             float: left;
 
+            @media only screen and (max-width: $max-mob) {
+                float: none;
+            }
+
             &:last-child {
                 margin-left: 25%;
+
+                @media only screen and (max-width: $max-mob) {
+                    margin: 0 0 20px 0;
+                }
             }
         }
 
