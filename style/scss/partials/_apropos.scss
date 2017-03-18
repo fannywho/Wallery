@@ -16,6 +16,7 @@ section.horaires {
         width: 30%;
         bottom: 1%;
         left: 9%;
+        padding-top: 20px;
 
         @media only screen and (max-width: $max-tab) {
             position: inherit;
@@ -60,12 +61,13 @@ section.horaires {
             }
         }
 
-        img {
-            width: 25%;
-            left: 33%;
+        .fleche {
+            width: 73px;
+            left: 61%;
+            margin-left: -73px;
             position: absolute;
             z-index: 2;
-            top: 97%;
+            bottom: -61px;
 
             @media only screen and (max-width: $max-tab) {
                 display: none;

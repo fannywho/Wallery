@@ -13,7 +13,7 @@ section.description {
 
     h4 {
         font-family: $font-paragraphe;
-        padding-bottom: 5%;
+        padding-bottom: 50px;
         border-bottom: 1px solid #000;
         font-size: 20px;
     }
@@ -21,9 +21,19 @@ section.description {
     .icon {
         position: absolute;
         z-index: 2;
-        left: 48.5%;
-        top: 88%;
+        left: 51.5%;
+        margin-left: -30px;
+        bottom: -17px;
         color: #000;
+        cursor: pointer;
+        padding: 0;
+
+        @media only screen and (max-width: $max-tab) {
+            left: 52%;
+        }
+        @media only screen and (max-width: $max-mob) {
+            left: 55%;
+        }
     }
 
     .paragraphe {

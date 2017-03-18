@@ -120,9 +120,11 @@ a {
 	z-index:999;
 	width:100%;
 	background:#fff;
+	border: 1px solid #000;
 
 	img {
 		padding:10% 10%;
+		width: auto;
 	}
 
 	a {
@@ -132,6 +134,7 @@ a {
 	ul {
 		float:right;
 		margin-right:10%;
+		margin-bottom: 20px;
 
 		li {
 			padding:30% 15% 0 0;
@@ -148,6 +151,7 @@ a {
 
 	label {
 		display:none;
+		transition: 1s;
 	}
 
 	a {
@@ -166,11 +170,12 @@ a {
 
 		position:absolute;
 		width:100%;
-		z-index:2;
+		z-index:999;
 		background:#fff;
 
 		label {
-			position:absolute;
+			text-align: center;
+			position:static;
 			display:block;
 			left:40%;
 			top:20%;
@@ -216,9 +221,9 @@ a {
 	z-index:100;
 	background:#000;
 	position:absolute;
-	width:80%;
-	left:10%;
-	border:1px solid #fff;
+	width:60%;
+	right:20%;
+	border-top:1px solid #fff;
 
 	a {
 		color:#fff;
@@ -228,9 +233,10 @@ a {
 		float:left;
 		padding-left:4%;
 		padding-top:8%;
+		width: 20%;
 
 		li {
-			padding-bottom:70%;
+			padding-bottom:40%;
 		}
 	}
 
@@ -241,14 +247,14 @@ a {
 
 	.hover-images {
 		float:right;
-		width:85%;
+		width:80%;
 		margin-right:-2.5%;
 
 		.left {
 			color:#fff;
-			width:50%;
+			width:41%;
 			position:absolute;
-			left:10%;
+			left:20%;
 			bottom:0;
 			background:rgba(0,0,0,0.6);
 			padding:2%;
@@ -259,7 +265,7 @@ a {
 			color:#fff;
 			right:0;
 			bottom:0;
-			width:40%;
+			width:39%;
 			padding:2%;
 			background:rgba(0,0,0,0.6);
 			text-align:center;
