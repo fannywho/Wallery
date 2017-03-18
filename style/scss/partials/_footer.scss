@@ -48,13 +48,21 @@ footer {
 
 			&.horaires {
 				float: left;
-				margin-left: 15%;
+
+				&.droite {
+					float: right;
+					
+					@media only screen and (max-width: $max-tab) {
+						float: none;
+						margin: 0;
+					}
+				}	
 
 				@media only screen and (max-width: $max-tab) {
 					float: none;
-					margin: 0;
 				}
 			}
+
 		}
 
 		&.social {

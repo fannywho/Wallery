@@ -177,14 +177,17 @@ a {
   position: absolute;
   z-index: 999;
   width: 100%;
-  background: #fff; }
+  background: #fff;
+  border: 1px solid #000; }
   .menu img {
-    padding: 10% 10%; }
+    padding: 10% 10%;
+    width: auto; }
   .menu a {
     color: #000; }
   .menu ul {
     float: right;
-    margin-right: 10%; }
+    margin-right: 10%;
+    margin-bottom: 20px; }
     .menu ul li {
       padding: 30% 15% 0 0; }
 
@@ -194,7 +197,8 @@ a {
 .recherche {
   font-family: "Open Sans"; }
   .recherche label {
-    display: none; }
+    display: none;
+    transition: 1s; }
   .recherche a {
     display: none; }
   .recherche input {
@@ -207,10 +211,11 @@ a {
     .recherche {
       position: absolute;
       width: 100%;
-      z-index: 2;
+      z-index: 999;
       background: #fff; }
       .recherche label {
-        position: absolute;
+        text-align: center;
+        position: static;
         display: block;
         left: 40%;
         top: 20%; }
@@ -242,29 +247,30 @@ a {
   z-index: 100;
   background: #000;
   position: absolute;
-  width: 80%;
-  left: 10%;
-  border: 1px solid #fff; }
+  width: 60%;
+  right: 20%;
+  border-top: 1px solid #fff; }
   .hover-artistes a {
     color: #fff; }
   .hover-artistes ul {
     float: left;
     padding-left: 4%;
-    padding-top: 8%; }
+    padding-top: 8%;
+    width: 20%; }
     .hover-artistes ul li {
-      padding-bottom: 70%; }
+      padding-bottom: 40%; }
   .hover-artistes img {
     width: 48%;
     margin: 0; }
   .hover-artistes .hover-images {
     float: right;
-    width: 85%;
+    width: 80%;
     margin-right: -2.5%; }
     .hover-artistes .hover-images .left {
       color: #fff;
-      width: 50%;
+      width: 41%;
       position: absolute;
-      left: 10%;
+      left: 20%;
       bottom: 0;
       background: rgba(0, 0, 0, 0.6);
       padding: 2%;
@@ -274,7 +280,7 @@ a {
       color: #fff;
       right: 0;
       bottom: 0;
-      width: 40%;
+      width: 39%;
       padding: 2%;
       background: rgba(0, 0, 0, 0.6);
       text-align: center; }
@@ -412,6 +418,9 @@ section.caroussel p {
   @media only screen and (max-width: 449px) {
     section.caroussel p {
       font-size: 14px; } }
+section.caroussel a {
+  color: #fff;
+  text-decoration: none; }
 section.caroussel a.bouton {
   border: 1px solid #fff;
   padding: 10px 20px;
@@ -422,7 +431,7 @@ section.caroussel a.bouton {
   position: absolute;
   bottom: 30px;
   right: 15px;
-  z-index: 999; }
+  z-index: 2; }
   section.caroussel a.bouton:hover {
     background: #fff;
     color: #000;
@@ -440,9 +449,9 @@ section.caroussel img.arrowdown {
   section.caroussel img.arrowdown:hover {
     background: rgba(0, 0, 0, 0.1);
     transition: 0.5s; }
-  @media only screen and (max-width: 449px) {
+  @media only screen and (max-width: 800px) {
     section.caroussel img.arrowdown {
-      left: 36%; } }
+      display: none; } }
 
 /*
 ** 4) Accueil
@@ -519,28 +528,30 @@ section.projecteur {
 /*
 ** 5) Artistes
 *************************************/
-section.filtres div.filtres-contenu a {
-  color: #000; }
-section.filtres div.filtres-contenu ul li {
-  width: 17.5%;
-  padding: 1%;
-  float: left;
-  margin: auto 1%;
-  text-align: center;
-  font-family: "Open Sans"; }
-  @media only screen and (max-width: 800px) {
-    section.filtres div.filtres-contenu ul li {
-      width: 23%; }
-      section.filtres div.filtres-contenu ul li:first-child {
-        float: none;
-        margin: 0 0 2% 40%; } }
-  @media only screen and (max-width: 449px) {
-    section.filtres div.filtres-contenu ul li {
-      width: 100%;
-      margin-top: 2%; }
-      section.filtres div.filtres-contenu ul li:first-child {
-        float: left;
-        margin: 0 1%; } }
+section.filtres div.filtres-contenu {
+  cursor: pointer; }
+  section.filtres div.filtres-contenu a {
+    color: #000; }
+  section.filtres div.filtres-contenu ul li {
+    width: 17.5%;
+    padding: 1%;
+    float: left;
+    margin: auto 1%;
+    text-align: center;
+    font-family: "Open Sans"; }
+    @media only screen and (max-width: 800px) {
+      section.filtres div.filtres-contenu ul li {
+        width: 23%; }
+        section.filtres div.filtres-contenu ul li:first-child {
+          float: none;
+          margin: 0 0 2% 40%; } }
+    @media only screen and (max-width: 449px) {
+      section.filtres div.filtres-contenu ul li {
+        width: 100%;
+        margin-top: 2%; }
+        section.filtres div.filtres-contenu ul li:first-child {
+          float: left;
+          margin: 0 1%; } }
 
 section.artistes {
   margin-top: 3%;
@@ -564,7 +575,7 @@ section.artistes {
       padding: 2%;
       float: left; }
       section.artistes div.col-33:last-child {
-        float: none; } }
+        margin-left: 25%; } }
   @media only screen and (max-width: 449px) {
     section.artistes div.col-33 {
       width: 100%;
@@ -581,15 +592,24 @@ section.description {
     text-align: center; }
   section.description h4 {
     font-family: "Open Sans";
-    padding-bottom: 5%;
+    padding-bottom: 50px;
     border-bottom: 1px solid #000;
     font-size: 20px; }
   section.description .icon {
     position: absolute;
     z-index: 2;
-    left: 48.5%;
-    top: 88%;
-    color: #000; }
+    left: 51.5%;
+    margin-left: -30px;
+    bottom: -17px;
+    color: #000;
+    cursor: pointer;
+    padding: 0; }
+    @media only screen and (max-width: 800px) {
+      section.description .icon {
+        left: 52%; } }
+    @media only screen and (max-width: 449px) {
+      section.description .icon {
+        left: 55%; } }
   section.description .paragraphe {
     padding-bottom: 4%;
     font-family: "Open Sans";
@@ -721,7 +741,8 @@ section.horaires {
     font-family: "Open Sans";
     width: 30%;
     bottom: 1%;
-    left: 9%; }
+    left: 9%;
+    padding-top: 20px; }
     @media only screen and (max-width: 800px) {
       section.horaires div.bandeau {
         position: inherit;
@@ -754,14 +775,15 @@ section.horaires {
       @media only screen and (max-width: 800px) {
         section.horaires div.bandeau p {
           margin: 0; } }
-    section.horaires div.bandeau img {
-      width: 25%;
-      left: 33%;
+    section.horaires div.bandeau .fleche {
+      width: 73px;
+      left: 61%;
+      margin-left: -73px;
       position: absolute;
       z-index: 2;
-      top: 97%; }
+      bottom: -61px; }
       @media only screen and (max-width: 800px) {
-        section.horaires div.bandeau img {
+        section.horaires div.bandeau .fleche {
           display: none; } }
 
 section.carte {
@@ -810,12 +832,19 @@ header {
   font-family: "Raleway";
   height: 94px;
   position: relative; }
+  @media only screen and (max-width: 800px) {
+    header {
+      text-align: center;
+      height: auto; } }
   header a {
     color: #fff;
     text-decoration: none; }
   header .logo {
     float: left;
     margin: 2.5% 0 0 0; }
+    @media only screen and (max-width: 800px) {
+      header .logo {
+        float: none; } }
   header ul li {
     text-transform: uppercase;
     float: right;
@@ -851,16 +880,12 @@ header {
     display: none; }
   @media only screen and (max-width: 800px) {
     header .logo {
-      margin-top: 5%;
-      margin-right: 0; }
-    header .burger {
-      display: block;
-      float: left;
-      margin: 5% 0 0 20%; }
+      float: none; }
+    header .burger,
     header .search {
-      display: block;
-      float: left;
-      margin: 4% 0 0 20%; }
+      float: none;
+      display: inline-block;
+      margin: 0 5%; }
     header ul li {
       display: none; } }
   @media only screen and (max-width: 449px) {
@@ -905,12 +930,16 @@ footer {
     footer div p {
       margin-bottom: 30px; }
       footer div p.horaires {
-        float: left;
-        margin-left: 15%; }
+        float: left; }
+        footer div p.horaires.droite {
+          float: right; }
+          @media only screen and (max-width: 800px) {
+            footer div p.horaires.droite {
+              float: none;
+              margin: 0; } }
         @media only screen and (max-width: 800px) {
           footer div p.horaires {
-            float: none;
-            margin: 0; } }
+            float: none; } }
     footer div.social ul {
       text-align: center; }
       footer div.social ul li {

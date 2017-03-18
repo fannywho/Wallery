@@ -46,7 +46,7 @@ var navGraffiti = document.querySelector('.graffiti-images');
 var navMarqueur = document.querySelector('.marqueur-images');
 
 liHover.addEventListener('mouseover', function() {
-	navHover.classList.toggle('cache');
+	navHover.style.display="block";
 
 	for (var i = 0; i < categories.length; i++) {
 		categories[0].addEventListener('mouseover', function() {
@@ -78,6 +78,10 @@ liHover.addEventListener('mouseover', function() {
 			navMarqueur.classList.remove('cache');
 		});
 	}
+});
+
+document.addEventListener('click', function() {
+	navHover.style.display="";
 });
 
 
